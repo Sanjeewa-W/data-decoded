@@ -342,7 +342,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 						<div id="wpforms-77-field_6-container" class="wpforms-field wpforms-field-text" data-field-type="text" data-field-id="6" style="position: absolute !important; overflow: hidden !important; display: inline !important; height: 1px !important; width: 1px !important; z-index: -1000 !important; padding: 0 !important;">
 							<label class="wpforms-field-label" for="wpforms-77-field_6" aria-hidden="true" style="counter-increment: none;"></label>
 							<input type="text" id="wpforms-77-field_6" class="wpforms-field-medium" name="wpforms[fields][6]" aria-hidden="true" style="visibility: hidden;" tabindex="-1">
-						</div><div id="wpforms-77-field_4-container" class="wpforms-field wpforms-field-textarea" data-field-id="4"><label class="wpforms-field-label" for="wpforms-77-field_4">Description</label><textarea id="wpforms-77-field_4" class="wpforms-field-large" name="wpforms[fields][4]" aria-errormessage="wpforms-77-field_4-error"></textarea></div></div><!-- .wpforms-field-container --><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="77">			<input type="hidden" name="wpforms[nonce]" value="0985b444c4">
+						</div><div id="wpforms-77-field_4-container" class="wpforms-field wpforms-field-textarea" data-field-id="4"><label class="wpforms-field-label" for="wpforms-77-field_4">Description</label><textarea id="wpforms-77-field_4" class="wpforms-field-large" name="budget" aria-errormessage="wpforms-77-field_4-error"></textarea></div></div><!-- .wpforms-field-container --><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="77">			<input type="hidden" name="wpforms[nonce]" value="0985b444c4">
 			<input type="hidden" name="page_title" value="Contact"><input type="hidden" name="page_url" value="https://sanjeewa-w.github.io/data-decoded/contact/"><input type="hidden" name="url_referer" value="https://sanjeewa-w.github.io/data-decoded/projects/"><input type="hidden" name="page_id" value="643"><input type="hidden" name="wpforms[post_id]" value="643"><button type="submit" name="wpforms[submit]" id="wpforms-submit-77" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button><img decoding="async" src="./Contact_files/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading" title="Contact"></div></form></div>  <!-- .wpforms-container -->				</div>
 				</div>
 				</div>
@@ -1098,8 +1098,8 @@ form.addEventListener('submit', async (e) => {
     formData.set("access_key", "a7852fdf-1292-418b-9815-fddab0cad956");
     formData.set("name", document.getElementById("wpforms-77-field_1").value);
     formData.set("email", document.getElementById("wpforms-77-field_2").value);
-    formData.set("message", document.getElementById("wpforms-77-field_4").value);
-    formData.delete("wpforms[fields][4]");
+    formData.set("budget", document.getElementById("wpforms-77-field_4").value);
+	formData.set("message", document.getElementById("wpforms-77-field_5").value);
 
     const originalText = submitBtn.textContent;
     submitBtn.textContent = "Sending...";
