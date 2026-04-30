@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- saved from url=(0034)https://sanjeewa-w.github.io/data-decoded/contact/ -->
 <html lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -6,8 +6,8 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11"> 
 	<title>Contact - </title>
 <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
-<link rel="alternate" type="application/rss+xml" title=" Â» Feed" href="https://sanjeewa-w.github.io/data-decoded/feed/">
-<link rel="alternate" type="application/rss+xml" title=" Â» Comments Feed" href="https://sanjeewa-w.github.io/data-decoded/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title=" » Feed" href="https://sanjeewa-w.github.io/data-decoded/feed/">
+<link rel="alternate" type="application/rss+xml" title=" » Comments Feed" href="https://sanjeewa-w.github.io/data-decoded/comments/feed/">
 <!-- SureRank Meta Data -->
 <link rel="canonical" href="https://sanjeewa-w.github.io/data-decoded/contact/">
 <meta name="description" content="Contact Book a call I\&#39;d love to hear from you! Email me hello@wilsonbrock.com find me FAQ Questions &amp; Answers What services do you offer? I offer a range of">
@@ -574,7 +574,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 				</div>
 				<div class="elementor-element elementor-element-82d87c3 elementor-widget elementor-widget-heading" data-id="82d87c3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Letâ€™s Turn your Ideas<br> into Reality</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Let's Turn your Ideas<br> into Reality</h2>				</div>
 				</div>
 				<div class="elementor-element elementor-element-e7a91dd elementor-align-center elementor-widget elementor-widget-button" data-id="e7a91dd" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -1143,30 +1143,4 @@ form.addEventListener('submit', async function (e) {
 
 
 
-<script id="static-mobile-menu-fix">
-(function () {
-  function initStaticMobileMenu() {
-    var toggles = document.querySelectorAll('.main-header-menu-toggle');
-    toggles.forEach(function (toggle) {
-      if (toggle.dataset.staticMenuFix === '1') return;
-      toggle.dataset.staticMenuFix = '1';
-      toggle.addEventListener('click', function () {
-        var body = document.body;
-        var mobileWrap = toggle.closest('.ast-mobile-header-wrap');
-        var content = mobileWrap ? mobileWrap.querySelector('.ast-mobile-header-content') : document.querySelector('.ast-mobile-header-content');
-        var isOpen = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-        body.classList.toggle('ast-main-header-nav-open', !isOpen);
-        body.classList.toggle('ast-header-break-point', !isOpen);
-        if (content) content.style.display = isOpen ? '' : 'block';
-      });
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initStaticMobileMenu);
-  } else {
-    initStaticMobileMenu();
-  }
-}());
-</script>
 </body></html>
