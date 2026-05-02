@@ -6634,21 +6634,43 @@ body .elementor hr {
 </style>
 
 <style>
-        .portfolio-title{
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-size: 20px;
-            font-weight: 400;
-            color: #ffffff !important;
-            text-decoration: none;
-            letter-spacing: -0.5px;
-            line-height: 1.1;
-            display: inline-block;
-        }
+.portfolio-title{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    display: inline-block;
+    white-space: nowrap;
+}
 
-        .portfolio-title:hover{
-            color: #ffffff !important;
-            text-decoration: none;
-        }
+/* Tablet */
+@media (max-width: 921px){
+
+    .portfolio-title{
+        font-size: 16px;
+        max-width: 220px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .site-branding{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 544px){
+
+    .portfolio-title{
+        font-size: 14px;
+        max-width: 170px;
+    }
+}
 </style>
 
 
@@ -6705,7 +6727,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
        class="portfolio-title"
        rel="home"
        aria-current="page">
-       SANJEEWA W | DATA ANALYTICS PORTFOLIO
+       SANJEEWA W | PORTFOLIO
     </a>
 
 </div>
