@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Packages</title>
+
+<link rel="stylesheet" href="./Package_files/main.min.css">
+<link rel="stylesheet" href="./Package_files/frontend.min.css">
+<link rel="stylesheet" href="./Package_files/post-5.css">
+
+<style>
+:root {
+  --gold: #d4af37;
+  --beige: #f5e6c8;
+  --black: #000;
+  --dark: #0b0b0b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--black);
+  color: var(--beige);
+}
+
+h1,
+.entry-content :where(h1) {
+    font-size: 200px;
+    font-size: 12.5rem;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    line-height: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: -8px;
+}
+
+/* HEADER */
+.header {
+  padding: 20px 60px;
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+
+  display: flex;                 /* NEW */
+  justify-content: space-between; /* NEW */
+  align-items: center;            /* NEW */
+}
+
+.site-branding a {
+  color: var(--beige);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;     /* CHANGED */
+  margin: 0;
+}
+
+.nav a {
+  color: var(--beige);
+  text-decoration: none;
+}
+
+.nav a:hover { color: var(--gold); }
+
+/* PAGE TITLE */
+.page-title {
+  max-width: 1140px;
+  margin: 80px auto 40px;
+}
+
+/* SECTION */
+.section { padding: 30px 20px 60px; }
+.section-title {
+  max-width: 1000px;
+  margin: 0 auto 15px;
+  color: var(--gold);
+  font-size: 22px;
+}
+
+.packages-container {
+  max-width: 1000px;
+  margin: auto;
+  background: var(--dark);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.packages-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.packages-table th {
+  text-align: center; /* CENTER HEADINGS */
+  padding: 12px;
+  background: #111;
+  color: var(--gold);
+}
+
+.packages-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(212,175,55,0.15);
+  text-align: center;
+}
+
+/* keep first column centered now */
+.packages-table td:first-child {
+  text-align: center;
+  font-weight: 500;
+}
+
+.price { color: var(--gold); }
+
+.addons { margin-top: 20px; }
+.addons div {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+/* LIGHT WIDE SECTION */
+.light-section {
+  background: var(--beige);
+  color: #000;
+  padding: 80px 20px;
+}
+
+.light-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.feature-box {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.feature {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 40px;
+  padding: 40px 20px;
+  border-top: 1px solid rgba(212,175,55,0.2);
+  text-align: center;
+}
+
+.footer-nav-wrap ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav-wrap a {
+  color: var(--beige);
+  text-decoration: none;
+}
+
+.portfolio-title{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Tablet */
+@media (max-width: 921px){
+  .page-title{
+    font-size: 90px;
+    letter-spacing: -4px;
+    margin: 60px auto 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 544px){
+  .page-title{
+    font-size: 34px;
+    letter-spacing: -1px;
+    margin: 40px 20px;
+  }
+}
+
+
+@media (max-width: 768px){
+
+  .packages-container{
+    padding: 10px;
+  }
+
+  .packages-table{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .packages-table th,
+  .packages-table td{
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .section-title{
+    font-size: 18px;
+  }
+
+}
+
+
+
+/* Tablet */
+@media (max-width: 921px){
+    .portfolio-title{
+        font-size: 16px;
+        max-width: 220px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .site-branding{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 544px){
+    .portfolio-title{
+        font-size: 14px;
+        max-width: 170px;
+    }
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+<!-- HEADER -->
+<div class="header">
+  <div class="site-branding">
+    <a href="../" class="portfolio-title">SANJEEWA W | DATA ANALYTICS</a>
+  </div>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/">Home</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/about/">About</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/projects/">Projects</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/services/">Services</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/packages/">Packages</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/contact/">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<!-- PAGE TITLE -->
+<h1 class="page-title">PACKAGES</h1>
+
+
+<!-- TABLE 1 -->
+<div class="section">
+  <div class="section-title">1. Fast data Analysis for Small-Scale research</div>
+  <div class="packages-container">
+    <table class="packages-table">
+      <tr><th>Package</th><th>US$5<br>Starter</th><th>US$10<br>Standard</th><th>US$15<br>Advanced</th></tr>
+      <tr><td>Description</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Visualize results</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Survey questions</td><td>20</td><td>20</td><td>20</td></tr>
+      <tr><td>Respondents analyzed</td><td>100</td><td>200</td><td>300</td></tr>
+      <tr><td>Revisions</td><td>2</td><td>2</td><td>2</td></tr>
+      <tr><td>Delivery Time</td><td>1 day</td><td>1 day</td><td>1 day</td></tr>
+      <tr><td>Total</td><td>US$5</td><td>US$10</td><td>US$15</td></tr>
+    </table>
+    <div class="addons">
+      <div><span>Fast Delivery</span><span>+$10 - $15</span></div>
+      <div><span>Additional Revision</span><span>+$5</span></div>
+      <div><span>Additional Graph/Chart</span><span>+$2</span></div>
+      <div><span>Additional Scenario</span><span>+$10</span></div>
+      <div><span>Additional Model Variation</span><span>+$10</span></div>
+      <div><span>Free text analysis (+1 Day)</span><span>+$10</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TABLE 2 -->
+<div class="section">
+  <div class="section-title">2. Unified Research Data Analysis</div>
+  <div class="packages-container">
+    <table class="packages-table">
+      <tr><th>Package</th><th>US$20<br>Starter</th><th>US$50<br>Standard</th><th>US$120<br>Advanced</th></tr>
+      <tr><td>Description</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Insights summary</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Visualize results</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Free text analysis</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Question writing</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Survey questions</td><td>40</td><td>50</td><td>50</td></tr>
+      <tr><td>Respondents analyzed</td><td>1000</td><td>1000</td><td>1000</td></tr>
+      <tr><td>Revisions</td><td>2</td><td>3</td><td>5</td></tr>
+      <tr><td>Delivery Time</td><td>2 days</td><td>5 days</td><td>10 days</td></tr>
+      <tr><td>Total</td><td>US$20</td><td>US$50</td><td>US$120</td></tr>
+    </table>
+    <div class="addons">
+      <div><span>Fast Delivery</span><span>+$10 - $15</span></div>
+      <div><span>Additional Revision</span><span>+$5</span></div>
+      <div><span>Additional Graph/Chart</span><span>+$2</span></div>
+      <div><span>Additional Scenario</span><span>+$10</span></div>
+      <div><span>Additional Model Variation</span><span>+$10</span></div>
+      <div><span>Free text analysis (+1 Day)</span><span>+$10</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TABLE 3 -->
+<div class="section">
+  <div class="section-title">3. Regression Analysis</div>
+  <div class="packages-container">
+    <table class="packages-table">
+      <tr><th>Package</th><th>US$10<br>Starter</th><th>US$25<br>Standard</th><th>US$60<br>Advanced</th></tr>
+      <tr><td>Description</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Insights summary</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Visualize results</td><td>value</td><td>value</td><td>value</td></tr>
+      <tr><td>Survey questions</td><td>10</td><td>20</td><td>30</td></tr>
+      <tr><td>Revisions</td><td>2</td><td>3</td><td>3</td></tr>
+      <tr><td>Delivery Time</td><td>2 days</td><td>3 days</td><td>5 days</td></tr>
+      <tr><td>Total</td><td>US$10</td><td>US$25</td><td>US$60</td></tr>
+    </table>
+    <div class="addons">
+      <div><span>Fast Delivery</span><span>+$10 - $15</span></div>
+      <div><span>Additional Revision</span><span>+$5</span></div>
+      <div><span>Additional Graph/Chart</span><span>+$2</span></div>
+      <div><span>Additional Scenario</span><span>+$10</span></div>
+      <div><span>Additional Model Variation</span><span>+$10</span></div>
+      <div><span>Free text analysis (+1 Day)</span><span>+$10</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHT AREA -->
+<div class="light-section">
+  <div class="light-container">
+    <h2>Why Choose Our Packages</h2>
+    <div class="feature-box">
+      <div class="feature"><h3>Accuracy</h3><p>Reliable outputs for research.</p></div>
+      <div class="feature"><h3>Speed</h3><p>Fast turnaround time.</p></div>
+      <div class="feature"><h3>Flexibility</h3><p>Customizable solutions.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+  <div class="footer-nav-wrap">
+    <ul>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/">Home</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/about/">About</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/projects/">Projects</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/services/">Services</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/packages/">Packages</a></li>
+      <li><a href="https://sanjeewa-w.github.io/data-decoded/contact/">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
