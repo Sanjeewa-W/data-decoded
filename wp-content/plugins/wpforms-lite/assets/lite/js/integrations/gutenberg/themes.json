@@ -6,10 +6,10 @@
 			"fieldBorderRadius": "0px",
 			"fieldBorderStyle": "solid",
 			"fieldBorderSize": "1px",
-			"fieldBackgroundColor": "#ffffff",
+			"fieldBackgroundColor": "#f5f1e8",
 			"fieldBorderColor": "#cccccc",
 			"fieldTextColor": "#444444",
-			"fieldMenuColor": "#ffffff",
+			"fieldMenuColor": "#f5f1e8",
 			"labelSize": "small",
 			"labelColor": "#262626",
 			"labelSublabelColor": "#7f7f7f",
@@ -31,10 +31,10 @@
 			"fieldBorderRadius": "3px",
 			"fieldBorderStyle": "solid",
 			"fieldBorderSize": "1px",
-			"fieldBackgroundColor": "#ffffff",
+			"fieldBackgroundColor": "#f5f1e8",
 			"fieldBorderColor": "rgba( 0, 0, 0, 0.25 )",
 			"fieldTextColor": "rgba( 0, 0, 0, 0.7 )",
-			"fieldMenuColor": "#ffffff",
+			"fieldMenuColor": "#f5f1e8",
 			"labelSize": "medium",
 			"labelColor": "rgba( 0, 0, 0, 0.85 )",
 			"labelSublabelColor": "rgba( 0, 0, 0, 0.55 )",
@@ -45,7 +45,7 @@
 			"buttonBorderRadius": "3px",
 			"buttonBorderColor": "#066aab",
 			"buttonBackgroundColor": "#066aab",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"pageBreakColor": "#066aab"
 		}
 	},
@@ -143,7 +143,7 @@
 		"name": "Blossom",
 		"settings": {
 			"buttonBackgroundColor": "#d75e42",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#32261b",
 			"labelSublabelColor": "#634d36",
 			"fieldBorderColor": "rgba( 51, 26, 0, 0.15 )"
@@ -163,8 +163,8 @@
 		"name": "Concrete",
 		"settings": {
 			"buttonBackgroundColor": "#f04970",
-			"buttonTextColor": "#ffffff",
-			"labelColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
+			"labelColor": "#f5f1e8",
 			"labelSublabelColor": "rgba(255, 255, 255, 0.50)",
 			"fieldBorderColor": "rgba(255, 255, 255, 0.25)"
 		}
@@ -173,8 +173,8 @@
 		"name": "Cotton Candy",
 		"settings": {
 			"buttonBackgroundColor": "#952653",
-			"buttonTextColor": "#ffffff",
-			"labelColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
+			"labelColor": "#f5f1e8",
 			"labelSublabelColor": "rgba(255, 255, 255, 0.75)",
 			"fieldBorderColor": "rgba(255, 255, 255, 0.5)"
 		}
@@ -183,8 +183,8 @@
 		"name": "Craft",
 		"settings": {
 			"buttonBackgroundColor": "rgba(0 ,0 ,0 ,0)",
-			"buttonTextColor": "#ffffff",
-			"labelColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
+			"labelColor": "#f5f1e8",
 			"labelSublabelColor": "#e0c5c5",
 			"fieldBorderColor": "rgba(255, 255, 255, 0.50)"
 		}
@@ -193,7 +193,7 @@
 		"name": "Elegance",
 		"settings": {
 			"buttonBackgroundColor": "#7d7d7d",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#7d7d7d",
 			"labelSublabelColor": "#7d7d7d",
 			"fieldBorderColor": "#e6e6e4"
@@ -203,7 +203,7 @@
 		"name": "Feathered",
 		"settings": {
 			"buttonBackgroundColor": "#46443a",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#46443a",
 			"labelSublabelColor": "#625e53",
 			"fieldBorderColor": "rgba(0, 0, 0, 0.15)"
@@ -223,7 +223,7 @@
 		"name": "Fresh",
 		"settings": {
 			"buttonBackgroundColor": "#2da314",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#000000",
 			"labelSublabelColor": "#404040",
 			"fieldBorderColor": "rgba(0, 0, 0, 0.30)"
@@ -233,7 +233,7 @@
 		"name": "Frost",
 		"settings": {
 			"buttonBackgroundColor": "#e03f79",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#09598d",
 			"labelSublabelColor": "#578bad",
 			"fieldBorderColor": "#6e9fbe"
@@ -243,7 +243,7 @@
 		"name": "Gloom",
 		"settings": {
 			"buttonBackgroundColor": "#258c60",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#a9abad",
 			"labelSublabelColor": "rgba(255, 255, 255, .7)",
 			"fieldBorderColor": "#4a4b4f"
@@ -253,7 +253,7 @@
 		"name": "Greenery",
 		"settings": {
 			"buttonBackgroundColor": "#1e1f19",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#262c1e",
 			"labelSublabelColor": "rgba(38, 44, 30, 0.5)",
 			"fieldBorderColor": "rgba(0, 0, 0, 0.10)"
@@ -263,7 +263,7 @@
 		"name": "Hallway",
 		"settings": {
 			"buttonBackgroundColor": "#000000",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#000000",
 			"labelSublabelColor": "#000000",
 			"fieldBorderColor": "#cbcbcb"
@@ -273,7 +273,7 @@
 		"name": "Harvest",
 		"settings": {
 			"buttonBackgroundColor": "#984628",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#481f10",
 			"labelSublabelColor": "#984628",
 			"fieldBorderColor": "rgba( 0, 0, 0, 0.25 )"
@@ -283,7 +283,7 @@
 		"name": "Jungle",
 		"settings": {
 			"buttonBackgroundColor": "rgba(14, 143, 28, 0.5)",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "rgba(255, 255, 255, 0.7)",
 			"labelSublabelColor": "rgba(255, 255, 255, 0.6)",
 			"fieldBorderColor": "rgba( 0, 0, 0, 0.25 )"
@@ -293,7 +293,7 @@
 		"name": "Lush",
 		"settings": {
 			"buttonBackgroundColor": "#962d3c",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#312425",
 			"labelSublabelColor": "rgba(49, 36, 37, 0.5)",
 			"fieldBorderColor": "rgba(0, 0, 0, 0.10)"
@@ -303,8 +303,8 @@
 		"name": "Manhattan",
 		"settings": {
 			"buttonBackgroundColor": "rgba(0, 0, 0, 0.32)",
-			"buttonTextColor": "#ffffff",
-			"labelColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
+			"labelColor": "#f5f1e8",
 			"labelSublabelColor": "rgba(255, 255, 255, 0.75)",
 			"fieldBorderColor": "rgba(255, 255, 255, 0.15)"
 		}
@@ -323,7 +323,7 @@
 		"name": "Monstera",
 		"settings": {
 			"buttonBackgroundColor": "#2f590f",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#000000",
 			"labelSublabelColor": "#6a6a6a",
 			"fieldBorderColor": "#a3a9c2"
@@ -333,8 +333,8 @@
 		"name": "Negative",
 		"settings": {
 			"buttonBackgroundColor": "#ff4d24",
-			"buttonTextColor": "#ffffff",
-			"labelColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
+			"labelColor": "#f5f1e8",
 			"labelSublabelColor": "#999999",
 			"fieldBorderColor": "#616265"
 		}
@@ -343,7 +343,7 @@
 		"name": "Palm",
 		"settings": {
 			"buttonBackgroundColor": "#000000",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#000000",
 			"labelSublabelColor": "#6a6a6a",
 			"fieldBorderColor": "#636363"
@@ -353,7 +353,7 @@
 		"name": "Plaster",
 		"settings": {
 			"buttonBackgroundColor": "#494848",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#494848",
 			"labelSublabelColor": "#afafaf",
 			"fieldBorderColor": "#afafaf"
@@ -363,7 +363,7 @@
 		"name": "Range",
 		"settings": {
 			"buttonBackgroundColor": "#ae0120",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#000000",
 			"labelSublabelColor": "#6a6a6a",
 			"fieldBorderColor": "rgba(61, 0, 0, 0.15)"
@@ -373,8 +373,8 @@
 		"name": "Rustic",
 		"settings": {
 			"buttonBackgroundColor": "rgba(0, 0, 0, 0.5)",
-			"buttonTextColor": "#ffffff",
-			"labelColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
+			"labelColor": "#f5f1e8",
 			"labelSublabelColor": "rgba(255, 255, 255, 0.75)",
 			"fieldBorderColor": "rgba( 0, 0, 0, 0.25 )"
 		}
@@ -383,7 +383,7 @@
 		"name": "Scrap",
 		"settings": {
 			"buttonBackgroundColor": "#2f3133",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#2f3133",
 			"labelSublabelColor": "#2f3133",
 			"fieldBorderColor": "rgba( 0, 0, 0, 0.25 )"
@@ -393,7 +393,7 @@
 		"name": "Solitude",
 		"settings": {
 			"buttonBackgroundColor": "#0e0f32",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#0e0f32",
 			"labelSublabelColor": "#64647f",
 			"fieldBorderColor": "rgba( 0, 0, 0, 0.25 )"
@@ -403,7 +403,7 @@
 		"name": "Sonic",
 		"settings": {
 			"buttonBackgroundColor": "#073eff",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#666666",
 			"labelSublabelColor": "#666666",
 			"fieldBorderColor": "#073eff"
@@ -413,8 +413,8 @@
 		"name": "Tidal",
 		"settings": {
 			"buttonBackgroundColor": "#474e54",
-			"buttonTextColor": "#ffffff",
-			"labelColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
+			"labelColor": "#f5f1e8",
 			"labelSublabelColor": "#a7b3be",
 			"fieldBorderColor": "#474e54"
 		}
@@ -423,7 +423,7 @@
 		"name": "Tranquil",
 		"settings": {
 			"buttonBackgroundColor": "#366ce3",
-			"buttonTextColor": "#ffffff",
+			"buttonTextColor": "#f5f1e8",
 			"labelColor": "#373d4a",
 			"labelSublabelColor": "#606775",
 			"fieldBorderColor": "rgba( 0, 0, 0, 0.25 )"
@@ -444,7 +444,7 @@
 		"settings": {
 			"buttonBackgroundColor": "rgba(255, 255, 255, 0.05)",
 			"buttonTextColor": "#e0b495",
-			"labelColor": "#ffffff",
+			"labelColor": "#f5f1e8",
 			"labelSublabelColor": "#e0b495",
 			"fieldBorderColor": "#e0b495"
 		}

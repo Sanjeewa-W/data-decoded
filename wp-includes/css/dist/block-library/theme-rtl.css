@@ -4,7 +4,7 @@
   text-align:center;
 }
 .is-dark-theme .wp-block-audio :where(figcaption){
-  color:#ffffffa6;
+  color:#f5f1e8a6;
 }
 
 .wp-block-audio{
@@ -24,7 +24,7 @@
   text-align:center;
 }
 .is-dark-theme .wp-block-embed :where(figcaption){
-  color:#ffffffa6;
+  color:#f5f1e8a6;
 }
 
 .wp-block-embed{
@@ -37,7 +37,7 @@
   text-align:center;
 }
 .is-dark-theme .blocks-gallery-caption{
-  color:#ffffffa6;
+  color:#f5f1e8a6;
 }
 
 :root :where(.wp-block-image figcaption){
@@ -46,7 +46,7 @@
   text-align:center;
 }
 .is-dark-theme :root :where(.wp-block-image figcaption){
-  color:#ffffffa6;
+  color:#f5f1e8a6;
 }
 
 .wp-block-image{
@@ -140,7 +140,7 @@
   text-align:center;
 }
 .is-dark-theme .wp-block-table :where(figcaption){
-  color:#ffffffa6;
+  color:#f5f1e8a6;
 }
 
 .wp-block-video :where(figcaption){
@@ -149,7 +149,7 @@
   text-align:center;
 }
 .is-dark-theme .wp-block-video :where(figcaption){
-  color:#ffffffa6;
+  color:#f5f1e8a6;
 }
 
 .wp-block-video{

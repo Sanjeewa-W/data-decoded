@@ -581,7 +581,7 @@
 #adminmenu #toplevel_page_elementor a[href="admin.php?page=go_elementor_pro"] {
   font-weight: 600;
   background-color: #93003f;
-  color: #ffffff;
+  color: #f5f1e8;
   margin: 3px 10px 0;
   display: block;
   text-align: center;
@@ -772,7 +772,7 @@ body .block-editor #elementor-switch-mode .button i {
   font-family: Sans-serif;
 }
 #elementor-go-to-edit-page-link:hover {
-  background-color: #ffffff;
+  background-color: #f5f1e8;
 }
 #elementor-go-to-edit-page-link:focus {
   box-shadow: none;
@@ -1292,7 +1292,7 @@ body.post-type-attachment table.media .column-title .media-icon img[src$=".svg"]
 .notice a.e-button,
 .error a.e-button,
 .updated a.e-button {
-  color: #ffffff;
+  color: #f5f1e8;
   text-decoration: none;
 }
 .notice a.e-button:hover, .notice a.e-button:focus, .notice a.e-button:active,
@@ -1302,7 +1302,7 @@ body.post-type-attachment table.media .column-title .media-icon img[src$=".svg"]
 .updated a.e-button:hover,
 .updated a.e-button:focus,
 .updated a.e-button:active {
-  color: #ffffff;
+  color: #f5f1e8;
   text-decoration: none;
 }
 .notice a.e-button.e-button--outline,
@@ -1339,7 +1339,7 @@ body.post-type-attachment table.media .column-title .media-icon img[src$=".svg"]
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  color: #ffffff;
+  color: #f5f1e8;
   border: 0;
   text-decoration: none;
   background: var(--e-button-context-color);
@@ -1350,7 +1350,7 @@ body.post-type-attachment table.media .column-title .media-icon img[src$=".svg"]
   transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .e-button:active, .e-button:hover, .e-button:focus {
-  color: #ffffff;
+  color: #f5f1e8;
   text-decoration: none;
   background: var(--e-button-context-color-dark);
 }
@@ -1692,7 +1692,7 @@ fieldset:disabled a.e-button {
 }
 #elementor-system-info #elementor-usage-recalc {
   font-size: 12px;
-  color: #ffffff;
+  color: #f5f1e8;
   background-color: #9DA5AE;
   padding: 4px 18px 5px 18px;
   border-radius: 3px;
@@ -2536,7 +2536,7 @@ label[for=e-dashboard-ally-hide] svg {
   padding: 0;
 }
 #elementor-role-manager .elementor-role-row {
-  background: #ffffff;
+  background: #f5f1e8;
   color: #3f444b;
   margin-block-end: 2px;
 }
@@ -2679,7 +2679,7 @@ label[for=e-dashboard-ally-hide] svg {
 }
 .e-experiment__title__tag {
   background: #0085ba;
-  color: #ffffff;
+  color: #f5f1e8;
   font-size: 0.8em;
   padding: 3px 6px;
   line-height: 1;

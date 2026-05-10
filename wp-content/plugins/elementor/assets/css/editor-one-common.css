@@ -87,9 +87,9 @@
 }
 
 :root {
-  --e-a-color-white:	#ffffff;
+  --e-a-color-white:	#f5f1e8;
   --e-a-color-black:	#000000;
-  --e-a-color-logo:	#ffffff;
+  --e-a-color-logo:	#f5f1e8;
   --e-a-color-circle-logo:	#000000;
   --e-a-color-primary:	#F3BAFD;
   --e-a-color-primary-bold:	#D004D4;
@@ -102,7 +102,7 @@
   --e-a-color-accent:	#93003f;
   --e-a-color-global:	#1DDDBF;
   --e-a-color-accent-promotion:	#93003f;
-  --e-a-bg-default:	#ffffff;
+  --e-a-bg-default:	#f5f1e8;
   --e-a-bg-invert:	#0C0D0E;
   --e-a-bg-hover:	#F1F2F3;
   --e-a-bg-active:	#E6E8EA;
@@ -119,7 +119,7 @@
   --e-a-color-txt:	#515962;
   --e-a-color-txt-muted:	#818A96;
   --e-a-color-txt-disabled:	#BABFC5;
-  --e-a-color-txt-invert:	#ffffff;
+  --e-a-color-txt-invert:	#f5f1e8;
   --e-a-color-txt-accent:	#0C0D0E;
   --e-a-color-txt-hover:	#3f444b;
   --e-a-color-txt-active:	#0C0D0E;
@@ -178,27 +178,27 @@
   --e-one-palette-secondary-light: #69727d;
   --e-one-palette-secondary-main: #515962;
   --e-one-palette-secondary-dark: #3f444b;
-  --e-one-palette-secondary-contrast-text: #ffffff;
+  --e-one-palette-secondary-contrast-text: #f5f1e8;
   --e-one-palette-secondary-contrastText: var(--e-one-palette-secondary-contrast-text);
   --e-one-palette-error-light: #ef4444;
   --e-one-palette-error-main: #dc2626;
   --e-one-palette-error-dark: #b91c1c;
-  --e-one-palette-error-contrast-text: #ffffff;
+  --e-one-palette-error-contrast-text: #f5f1e8;
   --e-one-palette-error-contrastText: var(--e-one-palette-error-contrast-text);
   --e-one-palette-warning-light: #d97706;
   --e-one-palette-warning-main: #bb5b1d;
   --e-one-palette-warning-dark: #b15211;
-  --e-one-palette-warning-contrast-text: #ffffff;
+  --e-one-palette-warning-contrast-text: #f5f1e8;
   --e-one-palette-warning-contrastText: var(--e-one-palette-warning-contrast-text);
   --e-one-palette-info-light: #3b82f6;
   --e-one-palette-info-main: #2563eb;
   --e-one-palette-info-dark: #1d4ed8;
-  --e-one-palette-info-contrast-text: #ffffff;
+  --e-one-palette-info-contrast-text: #f5f1e8;
   --e-one-palette-info-contrastText: var(--e-one-palette-info-contrast-text);
   --e-one-palette-success-light: #10b981;
   --e-one-palette-success-main: #0a875a;
   --e-one-palette-success-dark: #047857;
-  --e-one-palette-success-contrast-text: #ffffff;
+  --e-one-palette-success-contrast-text: #f5f1e8;
   --e-one-palette-success-contrastText: var(--e-one-palette-success-contrast-text);
   --e-one-palette-global-light: #99f6e4;
   --e-one-palette-global-main: #5eead4;
@@ -208,17 +208,17 @@
   --e-one-palette-promotion-light: #b51243;
   --e-one-palette-promotion-main: #93003f;
   --e-one-palette-promotion-dark: #7e013b;
-  --e-one-palette-promotion-contrast-text: #ffffff;
+  --e-one-palette-promotion-contrast-text: #f5f1e8;
   --e-one-palette-promotion-contrastText: var(--e-one-palette-promotion-contrast-text);
   --e-one-palette-decorative-light: #99f6e4;
   --e-one-palette-decorative-main: #5eead4;
   --e-one-palette-decorative-dark: #2adfcd;
   --e-one-palette-decorative-contrast-text: #0c0d0e;
   --e-one-palette-decorative-contrastText: var(--e-one-palette-decorative-contrast-text);
-  --e-one-palette-neutral-light: #ffffff;
-  --e-one-palette-neutral-main: #ffffff;
-  --e-one-palette-neutral-dark: #ffffff;
-  --e-one-palette-neutral-contrast-text: #ffffff;
+  --e-one-palette-neutral-light: #f5f1e8;
+  --e-one-palette-neutral-main: #f5f1e8;
+  --e-one-palette-neutral-dark: #f5f1e8;
+  --e-one-palette-neutral-contrast-text: #f5f1e8;
   --e-one-palette-neutral-contrastText: var(--e-one-palette-neutral-contrast-text);
   --e-one-palette-action-active: rgba(0, 0, 0, 0.54);
   --e-one-palette-action-hover: rgba(0, 0, 0, 0.04);
@@ -230,8 +230,8 @@
   --e-one-palette-divider: rgba(0, 0, 0, 0.12);
   --e-one-palette-common-black: #000;
   --e-one-palette-common-white: #fff;
-  --e-one-palette-background-default: #ffffff;
-  --e-one-palette-background-paper: #ffffff;
+  --e-one-palette-background-default: #f5f1e8;
+  --e-one-palette-background-paper: #f5f1e8;
   --e-one-palette-checkbox-primary: #515962;
   --e-one-palette-border: #A7AAAD;
 }

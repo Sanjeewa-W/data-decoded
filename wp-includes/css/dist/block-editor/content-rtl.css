@@ -475,8 +475,8 @@
   width:100%;
 }
 .is-dark-theme .block-editor-button-block-appender{
-  box-shadow:inset 0 0 0 1px #ffffffa6;
-  color:#ffffffa6;
+  box-shadow:inset 0 0 0 1px #f5f1e8a6;
+  color:#f5f1e8a6;
 }
 .block-editor-button-block-appender:hover{
   box-shadow:inset 0 0 0 1px var(--wp-admin-theme-color);
@@ -519,8 +519,8 @@
 }
 .block-list-appender:only-child.is-drag-over .block-editor-button-block-appender{
   background-color:var(--wp-admin-theme-color);
-  box-shadow:inset 0 0 0 1px #ffffffa6;
-  color:#ffffffa6;
+  box-shadow:inset 0 0 0 1px #f5f1e8a6;
+  color:#f5f1e8a6;
 }
 @media not (prefers-reduced-motion){
   .block-list-appender:only-child.is-drag-over .block-editor-button-block-appender{

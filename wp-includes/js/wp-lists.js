@@ -611,10 +611,10 @@ wpList = {
 	 * Returns the background color of the passed element.
 	 *
 	 * @param {jQuery|string} element Element to check.
-	 * @return {string} Background color value in HEX. Default: '#ffffff'.
+	 * @return {string} Background color value in HEX. Default: '#f5f1e8'.
 	 */
 	getColor: function( element ) {
-		return $( element ).css( 'backgroundColor' ) || '#ffffff';
+		return $( element ).css( 'backgroundColor' ) || '#f5f1e8';
 	},
 
 	/**

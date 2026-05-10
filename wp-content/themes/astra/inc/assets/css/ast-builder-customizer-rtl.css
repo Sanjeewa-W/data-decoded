@@ -257,11 +257,11 @@
     flex: 1;
     padding: 0 10px;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #f5f1e8;
 }
 
 .active-builder-row .ahfb-builder-sortable-panel, .ahfb-builder-group-horizontal:hover .ahfb-builder-sortable-panel {
-    background-color: #ffffff;
+    background-color: #f5f1e8;
 }
 
 .ahfb-builder-item {
@@ -447,7 +447,7 @@
 }
 
 .ahfb-build-tabs .nav-tab:hover, .ahfb-build-tabs .nav-tab:focus {
-    background: #ffffff;
+    background: #f5f1e8;
     color: #0073aa;
 }
 
@@ -728,7 +728,7 @@
 }
 
 .active-builder-row .ahfb-builder-group.ahfb-builder-group-horizontal .ahfb-row-actions {
-    color: #ffffff;
+    color: #f5f1e8;
 }
 
 .ahfb-builder-areas .components-button.ahfb-row-actions .dashicon {
@@ -940,13 +940,13 @@
 
 .ahfb-builder-area .ahfb-builder-item-add-icon:hover, .ahfb-builder-area .ahfb-builder-item-add-icon:focus {
     color: #191e23;
-    background: #ffffff;
+    background: #f5f1e8;
     box-shadow: unset;
     outline: none;
 }
 
 .ahfb-builder-group:hover .ahfb-builder-item-add-icon, .ahfb-builder-group:focus .ahfb-builder-item-add-icon, .active-builder-row .ahfb-builder-area .ahfb-builder-item-add-icon {
-    background: #ffffff;
+    background: #f5f1e8;
 }
 
 .active-builder-section.ahfb-builder-section-shortcut {
@@ -1160,7 +1160,7 @@ li#customize-control-astra-settings-header-desktop-items, li#customize-control-a
 
 .ahfb-radio-container-control .components-button.is-tertiary.active-radio {
     background: #007cba;
-    color: #ffffff;
+    color: #f5f1e8;
 }
 
 .ahfb-radio-container-control .components-button.is-tertiary.active-radio:not(:disabled):not([aria-disabled=true]):hover {
@@ -1202,7 +1202,7 @@ li#customize-control-astra-settings-header-desktop-items, li#customize-control-a
 .components-popover.ahfb-popover-color .components-popover__content {
     padding: 15px 15px 0px;
     box-sizing: initial;
-    background: #ffffff;
+    background: #f5f1e8;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
 }
@@ -1310,7 +1310,7 @@ li#customize-control-astra-settings-header-desktop-items, li#customize-control-a
 }
 
 .ahfb-palette-header .components-button-group .components-button.is-tertiary.active-palette {
-    color: #ffffff;
+    color: #f5f1e8;
     border: 1px solid #007cba;
     background: #007cba;
 }
@@ -1354,7 +1354,7 @@ li#customize-control-astra-settings-header-desktop-items, li#customize-control-a
 
 .ahfb-locked .components-button.is-single {
     border: 1px solid #e2e4e7;
-    background-color: #ffffff;
+    background-color: #f5f1e8;
     display: flex;
     height: 30px;
 }
@@ -1568,7 +1568,7 @@ li#customize-control-astra-settings-header-desktop-items, li#customize-control-a
     opacity: 1;
     border-bottom-color: #0071a1;
     color: #0073aa;
-    background-image: linear-gradient(-180deg, #f3f5f6, #ffffff);
+    background-image: linear-gradient(-180deg, #f3f5f6, #f5f1e8);
 }
 
 .ahfb-social-add-area, .ahfb-language-selector-add-area {
@@ -1746,7 +1746,7 @@ button.components-button.ahfb-sorter-item-expand {
 }
 
 .active-radio .ahfb-icon-set svg {
-    background: #ffffff;
+    background: #f5f1e8;
     border-radius: 3px;
     box-shadow: 0 0 3px 0px rgba(0, 133, 186, 0.67);
 }
@@ -2091,7 +2091,7 @@ button.components-button.ahfb-sorter-item-expand {
     text-align: center;
     line-height: 2;
     border: 1px solid #dddddd;
-    background-color: #ffffff;
+    background-color: #f5f1e8;
     border-radius: 3px 0 0 3px;
 }
 
@@ -2202,7 +2202,7 @@ button.components-button.ahfb-sorter-item-expand {
     line-height: 26px;
     font-size: 14px;
     border: 1px solid #dddddd;
-    background-color: #ffffff;
+    background-color: #f5f1e8;
     border-radius: 0 3px 3px 0;
     border-left-width: 0;
 }

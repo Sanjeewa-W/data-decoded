@@ -637,12 +637,12 @@ textarea {
 }
 
 a {
-	color: #4169e1
+	color: #4CAF50
 }
 
 a:focus,
 a:hover {
-	color: #191970
+	color: #2E7D32
 }
 
 a:focus {
@@ -731,7 +731,7 @@ object {
 
 ::selection {
 	color: #fff;
-	background: #0274be
+	background: #8B5E3C
 }
 
 body {
@@ -1735,7 +1735,7 @@ padding: 0 0.4em;
 }
 
 .widget_calendar #today {
-	background: #0274be
+	background: #8B5E3C
 }
 
 .ast-builder-grid-row {
@@ -1855,7 +1855,7 @@ padding: 0 0.4em;
 }
 
 .ast-builder-social-element:hover {
-	color: #0274be
+	color: #8B5E3C
 }
 
 .ast-builder-social-element .social-item-label {
@@ -2367,11 +2367,11 @@ input[type=range]::-webkit-slider-runnable-track {
 
 input[type=range]::-webkit-slider-thumb {
 	box-shadow: 0 0 0 rgba(255, 221, 0, .37), 0 0 0 rgba(255, 224, 26, .37);
-	border: 7.9px solid #0274be;
+	border: 7.9px solid #8B5E3C;
 	height: 20px;
 	width: 20px;
 	border-radius: 50px;
-	background: #0274be;
+	background: #8B5E3C;
 	cursor: pointer;
 	-webkit-appearance: none;
 	margin-top: -5.7px
@@ -2393,11 +2393,11 @@ input[type=range]::-moz-range-track {
 
 input[type=range]::-moz-range-thumb {
 	box-shadow: 0 0 0 rgba(255, 221, 0, .37), 0 0 0 rgba(255, 224, 26, .37);
-	border: 7.9px solid #0274be;
+	border: 7.9px solid #8B5E3C;
 	height: 20px;
 	width: 20px;
 	border-radius: 50px;
-	background: #0274be;
+	background: #8B5E3C;
 	cursor: pointer
 }
 
@@ -2426,11 +2426,11 @@ input[type=range]::-ms-fill-upper {
 
 input[type=range]::-ms-thumb {
 	box-shadow: 0 0 0 rgba(255, 221, 0, .37), 0 0 0 rgba(255, 224, 26, .37);
-	border: 7.9px solid #0274be;
+	border: 7.9px solid #8B5E3C;
 	height: 20px;
 	width: 20px;
 	border-radius: 50px;
-	background: #0274be;
+	background: #8B5E3C;
 	cursor: pointer;
 	height: 8.6px
 }

@@ -116,7 +116,7 @@ div#astra_settings_meta_box {
     padding: 8px 12px;
 }
 .ast-selector-inner-wrap .components-button.is-primary {
-    color: #ffffff;
+    color: #f5f1e8;
     background: #007cba;
 }
 .ast-meta-selector-controller .ast-selector-inner-wrap:first-child .components-button {
@@ -384,7 +384,7 @@ a.ast-pro-upgrade-link {
 
   .customize-control-ast-responsive-background .background-attachment .buttonset .switch-label,
   .customize-control-ast-responsive-background .background-size .buttonset .switch-label {
-    background: #ffffff;
+    background: #f5f1e8;
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: #555;
     padding: 2px 4px;
@@ -764,7 +764,7 @@ a.ast-pro-upgrade-link {
 }
 
 .astra-globe-dashicon {
-    color: #ffffff;
+    color: #f5f1e8;
     background: rgba(0,0,0,0.4);
     border-radius: 100%;
     border: 0.1px solid rgba(0,0,0,0.1);
@@ -980,7 +980,7 @@ a.ast-pro-upgrade-link {
 }
 .astra-popover-color {
 	margin: 5px -5px 0;
-	background-color: #ffffff;
+	background-color: #f5f1e8;
 	border-radius: 4px;
 	box-shadow: 0px 1px 16px -4px rgba(30, 41, 59, 0.16);
 }
@@ -1353,7 +1353,7 @@ a.ast-pro-upgrade-link {
   }
 
   .ui-state-active .ui-tabs-anchor {
-    color: #ffffff;
+    color: #f5f1e8;
   }
 
   .ui-tabs-anchor:hover {
@@ -1361,7 +1361,7 @@ a.ast-pro-upgrade-link {
   }
 
   .ui-state-active .ui-tabs-anchor:hover {
-    color: #ffffff;
+    color: #f5f1e8;
   }
 
   .ast-group-tabs .ui-widget-content {
@@ -1583,7 +1583,7 @@ a.ast-pro-upgrade-link {
 
   .astra-popover-tabs .components-tab-panel__tabs-item.active-tab {
     background-color: #0185BA;
-    color: #ffffff;
+    color: #f5f1e8;
   }
 
   .astra-popover-tabs.astra-media-tab .components-tab-panel__tabs,
