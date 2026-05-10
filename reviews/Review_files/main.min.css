@@ -1709,7 +1709,7 @@ body {
 }
 
 .widget_calendar thead a {
-	color: #0274be;
+	color: #d4af37;
 	font-size: 1rem;
 	vertical-align: middle
 }
@@ -1739,7 +1739,7 @@ body {
 }
 
 .widget_calendar #today {
-	color: #0274be;
+	color: #d4af37;
 	font-weight: 700;
 	border-bottom: 2px solid #0274be
 }
