@@ -4304,7 +4304,7 @@ body:not(.elementor-device-mobile) .elementor-control.elementor-control-responsi
   #wp-link-wrap {
     color-scheme: light;
     --e-a-color-txt: #515962;
-    --e-a-bg-default: #f5f1e8;
+    --e-a-bg-default: #ffffff;
     --e-a-border-color-bold: #D5D8DC;
     --e-a-color-primary-bold: #D004D4;
   }
@@ -7805,7 +7805,7 @@ iframe + #elementor-navigator__header__title, #elementor-navigator__ai-titles + 
   margin-inline: 12px;
 }
 .e-notice-bar__primary_action a {
-  background: #f5f1e8;
+  background: #ffffff;
   border-radius: 3px;
   color: #93003f;
   padding: 4px 10px;
@@ -7822,7 +7822,7 @@ iframe + #elementor-navigator__header__title, #elementor-navigator__ai-titles + 
   margin-inline: 4px;
 }
 .e-notice-bar__secondary_action a {
-  color: #f5f1e8;
+  color: #ffffff;
   text-decoration: underline;
 }
 .e-notice-bar__secondary_action a:hover {

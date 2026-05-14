@@ -4,7 +4,7 @@
   text-align:center;
 }
 .is-dark-theme :root :where(.wp-block-image figcaption){
-  color:#f5f1e8a6;
+  color:#ffffffa6;
 }
 
 .wp-block-image{

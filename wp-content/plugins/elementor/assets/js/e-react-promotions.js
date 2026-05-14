@@ -10043,7 +10043,7 @@ module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, 
       }
       if ((properties[i].mode === 's' || properties[i].mode === 'i') && count === 0) {
         rect = createNS('rect');
-        rect.setAttribute('fill', '#f5f1e8');
+        rect.setAttribute('fill', '#ffffff');
         rect.setAttribute('width', this.element.comp.data.w || 0);
         rect.setAttribute('height', this.element.comp.data.h || 0);
         currentMasks.push(rect);
@@ -10062,7 +10062,7 @@ module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, 
         defs.appendChild(path);
       } else {
         count += 1;
-        path.setAttribute('fill', properties[i].mode === 's' ? '#000000' : '#f5f1e8');
+        path.setAttribute('fill', properties[i].mode === 's' ? '#000000' : '#ffffff');
         path.setAttribute('clip-rule', 'nonzero');
         var filterID;
         if (properties[i].x.k !== 0) {
@@ -10078,7 +10078,7 @@ module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, 
           feMorph.setAttribute('radius', '0');
           expansor.appendChild(feMorph);
           defs.appendChild(expansor);
-          path.setAttribute('stroke', properties[i].mode === 's' ? '#000000' : '#f5f1e8');
+          path.setAttribute('stroke', properties[i].mode === 's' ? '#000000' : '#ffffff');
         } else {
           feMorph = null;
           x = null;
@@ -10461,7 +10461,7 @@ module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, 
           alphaRect.setAttribute('height', this.comp.data.h);
           alphaRect.setAttribute('x', '0');
           alphaRect.setAttribute('y', '0');
-          alphaRect.setAttribute('fill', '#f5f1e8');
+          alphaRect.setAttribute('fill', '#ffffff');
           alphaRect.setAttribute('opacity', '0');
           maskGrouper.setAttribute('filter', 'url(' + getLocationHref() + '#' + filId + ')');
           maskGrouper.appendChild(alphaRect);

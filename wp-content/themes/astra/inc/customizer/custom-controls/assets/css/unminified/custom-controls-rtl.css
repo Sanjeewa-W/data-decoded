@@ -142,7 +142,7 @@
 
 .customize-control-ast-background .background-attachment .buttonset .switch-label,
 .customize-control-ast-background .background-size .buttonset .switch-label {
-	background: #f5f1e8;
+	background: #ffffff;
 	border: 1px solid rgba( 0, 0, 0, 0.1 );
 	color: #555;
 	padding: 2px 4px;
@@ -261,7 +261,7 @@
 	text-align: center;
 	line-height: 2;
 	border: 1px solid #dddddd;
-	background-color: #f5f1e8;
+	background-color: #ffffff;
 	border-radius: 3px 0 0 3px;
 }
 
@@ -324,7 +324,7 @@
 }
 
 .customize-control-ast-border .input-wrapper .ast-border-wrapper li .ast-border-connected {
-	color: #f5f1e8;
+	color: #ffffff;
 }
 
 .customize-control-ast-border .input-wrapper .ast-border-wrapper li:last-child input.ast-border-input {
@@ -1066,7 +1066,7 @@ section.ast-palette-presets-inner-wrap {
 }
 
 .astra-globe-dashicon {
-	color: #f5f1e8;
+	color: #ffffff;
 	background: rgba( 0, 0, 0, 0.4 );
 	border-radius: 100%;
 	border: 0.1px solid rgba( 0, 0, 0, 0.1 );
@@ -1311,7 +1311,7 @@ section.ast-palette-presets-inner-wrap {
 
 .astra-popover-color {
 	margin: 5px -5px 0;
-	background-color: #f5f1e8;
+	background-color: #ffffff;
 	border-radius: 4px;
 	box-shadow: 0 6px 24px 0 #0000003d;
 }
@@ -1795,21 +1795,21 @@ li#customize-control-astra-settings-transparent-content-section-text-color-respo
 	--ast-customizer-color-6: #9CA3AF; /* Sub text color */
 	--ast-customizer-color-7: #D8DBDF; /* border color / outline / grey background */
 	--ast-customizer-color-8: #4B5563; /* icon color / Toggle color */
-	--ast-customizer-color-9: #f5f1e8; /* background color */
-	--ast-customizer-color-10: #f5f1e8; /* text invert / Icon invert */
+	--ast-customizer-color-9: #ffffff; /* background color */
+	--ast-customizer-color-10: #ffffff; /* text invert / Icon invert */
 	--ast-customizer-color-12: #1e293b; /* alt background 2*/
 	--ast-customizer-color-11: #F5F5F5; /* alt background */
 	--ast-customizer-color-13: #F3F4F6; /* alt background 3 */
 	--ast-customizer-color-14: #cc1818; /* danger color */
 
 	/* New Customizer Design - Variables */
-	--ast-customizer-global-background: #f5f1e8;
+	--ast-customizer-global-background: #ffffff;
 	--ast-customizer-primary-color: #0284c7;
 	--ast-customizer-alternate-primary-color: #0ea5e9;
 	--ast-customizer-secondary-color: #f3f4f6;
 	--ast-customizer-text-color: #1e293b;
 	--ast-customizer-sub-text-color: #9ca3af;
-	--ast-customizer-secondary-text-color: #f5f1e8;
+	--ast-customizer-secondary-text-color: #ffffff;
 	--ast-customizer-input-text-color: #475569;
 	--ast-customizer-border-color: #d8dbdf;
 	--ast-customizer-active-border-color: #0ea5e9;
@@ -3806,7 +3806,7 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 
 .ast-logo-svg-icon-icon-library-container .svg-icons-list .svg-icon {
 	padding: 15px;
-	background-color: #f5f1e8;
+	background-color: #ffffff;
 	border: 1px solid #e6e7e9;
 	border-radius: 3px;
 	cursor: pointer;
@@ -4517,7 +4517,7 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 
 .customize-control-ast-responsive-background .background-attachment .buttonset .switch-label,
 .customize-control-ast-responsive-background .background-size .buttonset .switch-label {
-	background: #f5f1e8;
+	background: #ffffff;
 	border: 1px solid rgba( 0, 0, 0, 0.1 );
 	color: #555;
 	padding: 2px 4px;
@@ -5570,7 +5570,7 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 }
 
 .ui-state-active .ui-tabs-anchor {
-	color: #f5f1e8;
+	color: #ffffff;
 }
 
 .ui-tabs-anchor:hover {
@@ -5578,7 +5578,7 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 }
 
 .ui-state-active .ui-tabs-anchor:hover {
-	color: #f5f1e8;
+	color: #ffffff;
 }
 
 .ast-group-tabs .ui-widget-content {
@@ -5786,7 +5786,7 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 
 .astra-popover-tabs .components-tab-panel__tabs-item.active-tab {
 	background-color: #0185ba;
-	color: #f5f1e8;
+	color: #ffffff;
 }
 .astra-popover-tabs .components-tab-panel__tabs .components-tab-panel__tabs-item {
 	height: 32px !important;

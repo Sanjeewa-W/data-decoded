@@ -1631,7 +1631,7 @@ body.is-fullscreen-mode .interface-interface-skeleton{
 }
 .editor-post-featured-image__actions:not(.editor-post-featured-image__actions-missing-image) .editor-post-featured-image__action{
   backdrop-filter:blur(16px) saturate(180%);
-  background:#f5f1e8bf;
+  background:#ffffffbf;
 }
 .editor-post-featured-image__actions .editor-post-featured-image__action{
   flex-grow:1;

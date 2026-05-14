@@ -31902,7 +31902,7 @@ const ColorPicker = ({
   color,
   onColorChange
 }) => {
-  const validColor = color && w(color).isValid() ? color : "#f5f1e8";
+  const validColor = color && w(color).isValid() ? color : "#ffffff";
   return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
     external_wp_components_namespaceObject.Dropdown,
     {

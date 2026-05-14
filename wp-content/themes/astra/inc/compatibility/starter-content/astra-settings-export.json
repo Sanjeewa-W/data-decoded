@@ -10456,7 +10456,7 @@
       "header-builder-menu-toggle-target": "icon",
       "header-offcanvas-content-alignment": "flex-start",
       "off-canvas-background": {
-        "background-color": "#f5f1e8",
+        "background-color": "#ffffff",
         "background-image": "",
         "background-repeat": "repeat",
         "background-position": "center center",

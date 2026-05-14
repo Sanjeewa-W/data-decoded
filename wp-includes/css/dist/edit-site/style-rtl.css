@@ -3558,10 +3558,10 @@ html.canvas-mode-edit-transition::view-transition-group(toggle){
 }
 
 .edit-site-sidebar-navigation-screen__content .edit-site-global-styles-variations_item .edit-site-global-styles-variations_item-preview{
-  outline-color:#f5f1e80d;
+  outline-color:#ffffff0d;
 }
 .edit-site-sidebar-navigation-screen__content .edit-site-global-styles-variations_item:not(.is-active):hover .edit-site-global-styles-variations_item-preview{
-  outline-color:#f5f1e826;
+  outline-color:#ffffff26;
 }
 .edit-site-sidebar-navigation-screen__content .edit-site-global-styles-variations_item.is-active .edit-site-global-styles-variations_item-preview{
   outline-color:#fff;

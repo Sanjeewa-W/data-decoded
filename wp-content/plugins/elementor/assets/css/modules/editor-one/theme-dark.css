@@ -1,5 +1,5 @@
 :root {
-  --e-one-palette-text-primary: #f5f1e8;
+  --e-one-palette-text-primary: #ffffff;
   --e-one-palette-text-secondary: #babfc5;
   --e-one-palette-text-tertiary: #9da5ae;
   --e-one-palette-text-disabled: #515962;
@@ -16,7 +16,7 @@
   --e-one-palette-error-light: #ef4444;
   --e-one-palette-error-main: #dc2626;
   --e-one-palette-error-dark: #b91c1c;
-  --e-one-palette-error-contrast-text: #f5f1e8;
+  --e-one-palette-error-contrast-text: #ffffff;
   --e-one-palette-error-contrastText: var(--e-one-palette-error-contrast-text);
   --e-one-palette-warning-light: #fbbf24;
   --e-one-palette-warning-main: #f59e0b;
@@ -26,12 +26,12 @@
   --e-one-palette-info-light: #3b82f6;
   --e-one-palette-info-main: #2563eb;
   --e-one-palette-info-dark: #1d4ed8;
-  --e-one-palette-info-contrast-text: #f5f1e8;
+  --e-one-palette-info-contrast-text: #ffffff;
   --e-one-palette-info-contrastText: var(--e-one-palette-info-contrast-text);
   --e-one-palette-success-light: #10b981;
   --e-one-palette-success-main: #0a875a;
   --e-one-palette-success-dark: #047857;
-  --e-one-palette-success-contrast-text: #f5f1e8;
+  --e-one-palette-success-contrast-text: #ffffff;
   --e-one-palette-success-contrastText: var(--e-one-palette-success-contrast-text);
   --e-one-palette-global-light: #99f6e4;
   --e-one-palette-global-main: #5eead4;
@@ -41,17 +41,17 @@
   --e-one-palette-promotion-light: #b51243;
   --e-one-palette-promotion-main: #93003f;
   --e-one-palette-promotion-dark: #7e013b;
-  --e-one-palette-promotion-contrast-text: #f5f1e8;
+  --e-one-palette-promotion-contrast-text: #ffffff;
   --e-one-palette-promotion-contrastText: var(--e-one-palette-promotion-contrast-text);
   --e-one-palette-decorative-light: #99f6e4;
   --e-one-palette-decorative-main: #5eead4;
   --e-one-palette-decorative-dark: #2adfcd;
   --e-one-palette-decorative-contrast-text: #0c0d0e;
   --e-one-palette-decorative-contrastText: var(--e-one-palette-decorative-contrast-text);
-  --e-one-palette-neutral-light: #f5f1e8;
-  --e-one-palette-neutral-main: #f5f1e8;
-  --e-one-palette-neutral-dark: #f5f1e8;
-  --e-one-palette-neutral-contrast-text: #f5f1e8;
+  --e-one-palette-neutral-light: #ffffff;
+  --e-one-palette-neutral-main: #ffffff;
+  --e-one-palette-neutral-dark: #ffffff;
+  --e-one-palette-neutral-contrast-text: #ffffff;
   --e-one-palette-neutral-contrastText: var(--e-one-palette-neutral-contrast-text);
   --e-one-palette-action-active: #fff;
   --e-one-palette-action-hover: rgba(255, 255, 255, 0.08);

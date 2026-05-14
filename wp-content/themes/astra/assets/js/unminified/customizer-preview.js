@@ -1568,7 +1568,7 @@ function hasWordPressWidgetBlockEditor() {
 			var icon_color = wp.customize('astra-settings[mobile-header-toggle-btn-color]').get();
 
 			if ( '' === icon_color && 'fill' === icon_style ) {
-				var dynamicStyle = ' [data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg { fill: #f5f1e8; } ';
+				var dynamicStyle = ' [data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg { fill: #ffffff; } ';
 				astra_add_dynamic_css( 'mobile-header-toggle-btn-style', dynamicStyle );
 			} else {
 				astra_add_dynamic_css( 'mobile-header-toggle-btn-style', '' );
@@ -1580,7 +1580,7 @@ function hasWordPressWidgetBlockEditor() {
 			buttons.addClass( 'ast-mobile-menu-buttons-' + icon_style );
 
 			var themeColor = wp.customize( 'astra-settings[theme-color]' ).get();
-			var defaultColor = '#f5f1e8';
+			var defaultColor = '#ffffff';
 			var toggleButtonColor = wp.customize( 'astra-settings[mobile-header-toggle-btn-color]' ).get();
 
 			if ( 'fill' !== icon_style ) {
