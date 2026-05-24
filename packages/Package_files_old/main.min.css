@@ -244,10 +244,8 @@ th {
 	padding: 0
 }
 
-/*!
- * Bootstrap v4.0.0-alpha.2 (https://getbootstrap.com)
- */
-.ast-container {
+/*! * Bootstrap v4.0.0-alpha.2 (https://getbootstrap.com)
+*/.ast-container {
 	max-width: 100%
 }
 
