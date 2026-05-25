@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Client Reviews - Data Decoded</title>
+
+<link rel="stylesheet" href="./Package_files/frontend.min.css">
+<link rel="stylesheet" href="./Package_files/post-642.css">
+<link rel="stylesheet" href="./Package_files/base-desktop.css">
+
+<style>
+
+:root {
+  --package-panel-bg: rgba(26, 26, 26, 0.94);
+  --package-border: rgba(212, 175, 55, 0.2);
+  --package-muted: rgba(245, 241, 232, 0.72);
+
+  --ast-global-color-0: #d4af37;
+  --ast-global-color-1: #ead7a1;
+  --ast-global-color-2: #f5f1e8;
+  --ast-global-color-3: #f8f8f8;
+  --ast-global-color-4: #1a1a1a;
+  --ast-global-color-5: #111111;
+}
+
+body {
+  margin: 0;
+  background: var(--ast-global-color-5);
+  color: var(--ast-global-color-3);
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+.packages-page-shell {
+  background: var(--ast-global-color-5);
+  color: var(--ast-global-color-3);
+  padding: 0;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.section-title {
+  color: var(--ast-global-color-0);
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  color: var(--package-muted);
+  margin-bottom: 40px;
+}
+
+.feature {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  color: #000000;
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 44px rgba(0,0,0,0.12);
+}
+
+.feature input,
+.feature select,
+.feature textarea {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.feature textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.ast-custom-button {
+  background: var(--ast-global-color-0);
+  color: #111111;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 240ms ease;
+}
+
+.ast-custom-button:hover {
+  background: var(--ast-global-color-1);
+}
+
+.review-card {
+  margin-top: 24px;
+}
+
+.review-card h3 {
+  margin-top: 0;
+}
+
+.stars {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--ast-global-color-0);
+}
+
+@media (max-width: 544px) {
+
+  .section {
+    padding: 40px 18px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="packages-page-shell">
+
+  <div class="section">
+
+    <h1 class="section-title">
+      Client Reviews
+    </h1>
+
+    <p class="section-subtitle">
+      Feedback and experiences from clients.
+    </p>
+
+    <div class="feature">
+
+      <input type="text"
+             id="name"
+             placeholder="Your Name">
+
+      <select id="rating">
+
+        <option value="5">★★★★★ (5 Stars)</option>
+        <option value="4">★★★★☆ (4 Stars)</option>
+        <option value="3">★★★☆☆ (3 Stars)</option>
+        <option value="2">★★☆☆☆ (2 Stars)</option>
+        <option value="1">★☆☆☆☆ (1 Star)</option>
+
+      </select>
+
+      <textarea id="comment"
+                placeholder="Write your review"></textarea>
+
+      <button class="ast-custom-button"
+              id="submitReview">
+
+        Submit Review
+
+      </button>
+
+    </div>
+
+    <div id="reviews"></div>
+
+  </div>
+
+</section>
+
+<script type="module">
+
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  getDocs
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyDcBplCME6Z_uQhYRwep6j37AwOhgLTZoI",
+
+  authDomain: "data-decoded-1.firebaseapp.com",
+
+  projectId: "data-decoded-1",
+
+  storageBucket: "data-decoded-1.firebasestorage.app",
+
+  messagingSenderId: "836853078982",
+
+  appId: "1:836853078982:web:ab31d586ca53f8e755f0c7",
+
+  measurementId: "G-P6Z09SXWC2"
+
+};
+
+
+// FIREBASE
+const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+
+
+// SUBMIT REVIEW
+document.getElementById("submitReview").onclick = async () => {
+
+  const name =
+    document.getElementById("name").value;
+
+  const rating =
+    document.getElementById("rating").value;
+
+  const comment =
+    document.getElementById("comment").value;
+
+
+  if (!name || !comment) {
+
+    alert("Please complete all fields.");
+
+    return;
+
+  }
+
+
+  await addDoc(collection(db, "reviews"), {
+
+    name: name,
+
+    rating: Number(rating),
+
+    comment: comment,
+
+    approved: false,
+
+    created: Date.now()
+
+  });
+
+
+  alert("Review submitted for approval.");
+
+
+  document.getElementById("name").value = "";
+
+  document.getElementById("comment").value = "";
+
+};
+
+
+// LOAD REVIEWS
+async function loadReviews() {
+
+  const querySnapshot =
+    await getDocs(collection(db, "reviews"));
+
+  const reviewsDiv =
+    document.getElementById("reviews");
+
+  reviewsDiv.innerHTML = "";
+
+
+  querySnapshot.forEach((doc) => {
+
+    const review = doc.data();
+
+
+    if (review.approved) {
+
+      reviewsDiv.innerHTML += `
+
+        <div class="feature review-card">
+
+          <h3>${review.name}</h3>
+
+          <div class="stars">
+            ${"★".repeat(review.rating)}
+          </div>
+
+          <p>${review.comment}</p>
+
+        </div>
+
+      `;
+    }
+
+  });
+
+}
+
+loadReviews();
+
+</script>
+
+</body>
+</html>
