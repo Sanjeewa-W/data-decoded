@@ -150,15 +150,9 @@ body {
              id="name"
              placeholder="Your Name">
 
-      <select id="rating">
-
-        <option value="5">★★★★★ (5 Stars)</option>
-        <option value="4">★★★★☆ (4 Stars)</option>
-        <option value="3">★★★☆☆ (3 Stars)</option>
-        <option value="2">★★☆☆☆ (2 Stars)</option>
-        <option value="1">★☆☆☆☆ (1 Star)</option>
-
-      </select>
+<input type="text"
+       id="title"
+       placeholder="Professional Title">
 
       <textarea id="comment"
                 placeholder="Write your review"></textarea>
@@ -223,8 +217,8 @@ document.getElementById("submitReview").onclick = async () => {
   const name =
     document.getElementById("name").value;
 
-  const rating =
-    document.getElementById("rating").value;
+  const title =
+    document.getElementById("title").value;
 
   const comment =
     document.getElementById("comment").value;
@@ -239,19 +233,19 @@ document.getElementById("submitReview").onclick = async () => {
   }
 
 
-  await addDoc(collection(db, "reviews"), {
+await addDoc(collection(db, "reviews"), {
 
-    name: name,
+  name: name,
 
-    rating: Number(rating),
+  rating: Number(rating),
 
-    comment: comment,
+  comment: comment,
 
-    approved: false,
+  approved: false,
 
-    created: Date.now()
+  created: Date.now()
 
-  });
+});
 
 
   alert("Review submitted for approval.");
@@ -289,9 +283,7 @@ async function loadReviews() {
 
           <h3>${review.name}</h3>
 
-          <div class="stars">
-            ${"★".repeat(review.rating)}
-          </div>
+          <h3>${review.title}</h3>
 
           <p>${review.comment}</p>
 
