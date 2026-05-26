@@ -3597,6 +3597,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 }
 
 .review-form-panel {
+  margin-top: 32px;
   padding: 34px;
 }
 
@@ -3675,19 +3676,6 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 
 .review-card {
   padding: 28px;
-  position: relative;
-}
-
-.review-date {
-  color: rgba(245, 241, 232, 0.58);
-  font-family: "Figtree", Sans-serif;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.3;
-  position: absolute;
-  right: 24px;
-  top: 22px;
 }
 
 .review-card h3,
@@ -3724,12 +3712,6 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
   .reviews-section { padding: 28px 18px 72px; }
   .review-form-panel,
   .review-card { padding: 22px; }
-  .review-date {
-    display: block;
-    margin-bottom: 14px;
-    position: static;
-    text-align: right;
-  }
 }
 </style>
 </head>
@@ -3788,7 +3770,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 <li id="menu-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="https://sanjeewa-w.github.io/data-decoded/services/" class="menu-link">Services</a></li>
 <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://sanjeewa-w.github.io/data-decoded/accomplishments/" class="menu-link">Accomplishments</a></li>
 <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="https://sanjeewa-w.github.io/data-decoded/packages/" class="menu-link">Packages</a></li>
-<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33 current-menu-item page_item page-item-33 current_page_item"><a href="https://sanjeewa-w.github.io/data-decoded/reviews/" aria-current="page" class="menu-link">Reviews</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33 current-menu-item page_item page-item-33 current_page_item"><a href="https://sanjeewa-w.github.io/data-decoded/reviews/" aria-current="page" class="menu-link">Feedback</a></li>
 <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://sanjeewa-w.github.io/data-decoded/contact/" class="menu-link">Contact</a></li>
 
 </ul></div></nav></div></div>		</div>
@@ -3846,7 +3828,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="https://sanjeewa-w.github.io/data-decoded/services/" class="menu-link">Services</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://sanjeewa-w.github.io/data-decoded/accomplishments/" class="menu-link">Accomplishments</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="https://sanjeewa-w.github.io/data-decoded/packages/" class="menu-link">Packages</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://sanjeewa-w.github.io/data-decoded/reviews/" aria-current="page" class="menu-link">Reviews</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://sanjeewa-w.github.io/data-decoded/reviews/" aria-current="page" class="menu-link">Feedback</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://sanjeewa-w.github.io/data-decoded/contact/" class="menu-link">Contact</a></li>
 
 </ul></div></nav></div></div>		</div>
@@ -3878,7 +3860,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
   <div class="e-con-inner">
     <div class="elementor-element elementor-element-bedf07f elementor-widget elementor-widget-heading" data-id="bedf07f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
       <div class="elementor-widget-container">
-        <h1 class="elementor-heading-title elementor-size-default">REVIEWS</h1>
+        <h1 class="elementor-heading-title elementor-size-default">FEEDBACK</h1>
       </div>
     </div>
   </div>
@@ -3886,10 +3868,15 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
     <section class="packages-page-shell reviews-page-shell">
 
     <div class="section reviews-section">
-      <h3 class="section-title">Client Feedback</h3>
+      <h3 class="section-title">Client Reviews</h3>
       <p class="section-subtitle">Feedback from collaborators reflecting the impact of data-driven insights and project delivery across academic and professional work.</p>
 
-      <div class="review-form-panel">
+
+
+      <div id="reviews" class="reviews-list"></div>
+
+
+	        <div class="review-form-panel">
         <div class="review-grid">
           <label>
             <span>Your Name</span>
@@ -3897,8 +3884,8 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
           </label>
 
           <label>
-            <span>Professional Title</span>
-            <input type="text" id="title" placeholder="Professional Title">
+            <span>Role</span>
+            <input type="text" id="title" placeholder="Role">
           </label>
         </div>
 
@@ -3910,7 +3897,6 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
         <button class="ast-custom-button review-submit" id="submitReview" type="button">Submit Review</button>
       </div>
 
-      <div id="reviews" class="reviews-list"></div>
     </div>
 
   </section>
@@ -4295,42 +4281,27 @@ function escapeHtml(value) {
   }[char]));
 }
 
-function formatReviewDate(value) {
-  const date = value ? new Date(value) : new Date();
-  if (Number.isNaN(date.getTime())) return "";
-
-  return new Intl.DateTimeFormat("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-    hour12: true
-  }).format(date).replace(",", " •");
-}
-
 document.getElementById("submitReview").onclick = async () => {
   const name = document.getElementById("name").value.trim();
-  const title = document.getElementById("title").value.trim();
+  const role = document.getElementById("title").value.trim();
   const comment = document.getElementById("comment").value.trim();
 
-  if (!name || !title || !comment) {
+  if (!name || !role || !comment) {
     alert("Please complete all fields.");
     return;
   }
 
   await addDoc(collection(db, "reviews"), {
     name,
-    title,
+    role,
     comment,
     approved: false,
-    created: Date.now(),
-    reviewedOn: Date.now()
+    created: Date.now()
   });
 
   alert("Review submitted for approval.");
   document.getElementById("name").value = "";
-  document.getElementById("title").value = "";
+  document.getElementById("title").value = "";  
   document.getElementById("comment").value = "";
 };
 
@@ -4340,16 +4311,17 @@ async function loadReviews() {
 
   querySnapshot.forEach((doc) => {
     const review = doc.data();
-    if (review.approved) {
-      reviewsDiv.innerHTML += `
-        <div class="review-card">
-          <div class="review-date">Reviewed on ${formatReviewDate(review.reviewedOn || review.created)}</div>
-          <h3>${escapeHtml(review.name)}</h3>
-          <h4>${escapeHtml(review.title)}</h4>
-          <p>${escapeHtml(review.comment)}</p>
-        </div>
-      `;
-    }
+if (review.approved) {
+  reviewsDiv.innerHTML =
+  `
+    <div class="review-card">
+      <h5>${escapeHtml(review.name)}</h5>
+      <h4>${escapeHtml(review.role)}</h4>
+      <p>${escapeHtml(review.comment)}</p>
+    </div>
+  `
+  + reviewsDiv.innerHTML;
+}
   });
 }
 
