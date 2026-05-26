@@ -3884,8 +3884,8 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
           </label>
 
           <label>
-            <span>Professional Title</span>
-            <input type="text" id="title" placeholder="Professional Title">
+            <span>Role</span>
+            <input type="text" id="title" placeholder="Role">
           </label>
         </div>
 
@@ -4283,17 +4283,17 @@ function escapeHtml(value) {
 
 document.getElementById("submitReview").onclick = async () => {
   const name = document.getElementById("name").value.trim();
-  const title = document.getElementById("title").value.trim();
+  const role = document.getElementById("title").value.trim();
   const comment = document.getElementById("comment").value.trim();
 
-  if (!name || !title || !comment) {
+  if (!name || !role || !comment) {
     alert("Please complete all fields.");
     return;
   }
 
   await addDoc(collection(db, "reviews"), {
     name,
-    title,
+    role,
     comment,
     approved: false,
     created: Date.now()
@@ -4301,7 +4301,8 @@ document.getElementById("submitReview").onclick = async () => {
 
   alert("Review submitted for approval.");
   document.getElementById("name").value = "";
-  document.getElementById("title").value = "";  document.getElementById("comment").value = "";
+  document.getElementById("title").value = "";  
+  document.getElementById("comment").value = "";
 };
 
 async function loadReviews() {
@@ -4315,7 +4316,7 @@ if (review.approved) {
   `
     <div class="review-card">
       <h5>${escapeHtml(review.name)}</h5>
-      <h4>${escapeHtml(review.title)}</h4>
+      <h4>${escapeHtml(review.role)}</h4>
       <p>${escapeHtml(review.comment)}</p>
     </div>
   `
