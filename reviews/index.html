@@ -4305,15 +4305,17 @@ async function loadReviews() {
 
   querySnapshot.forEach((doc) => {
     const review = doc.data();
-    if (review.approved) {
-      reviewsDiv.innerHTML += `
-        <div class="review-card">
-          <h3>${escapeHtml(review.name)}</h3>
-          <h4>${escapeHtml(review.title)}</h4>
-          <p>${escapeHtml(review.comment)}</p>
-        </div>
-      `;
-    }
+if (review.approved) {
+  reviewsDiv.innerHTML =
+  `
+    <div class="review-card">
+      <h3>${escapeHtml(review.name)}</h3>
+      <h4>${escapeHtml(review.title)}</h4>
+      <p>${escapeHtml(review.comment)}</p>
+    </div>
+  `
+  + reviewsDiv.innerHTML;
+}
   });
 }
 
