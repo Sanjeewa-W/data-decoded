@@ -3724,6 +3724,22 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
   margin-bottom: 0;
 }
 
+.location-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.location-toggle input {
+  width: auto;
+  margin: 0;
+}
+
+
+
 @media (max-width: 921px) {
   .reviews-section { padding-top: 36px; }
   .review-grid { grid-template-columns: 1fr; }
@@ -4322,30 +4338,63 @@ function formatReviewDate(value) {
   }).format(date).replace(",", " •");
 }
 
+
+
+
 document.getElementById("submitReview").onclick = async () => {
-  const name = document.getElementById("name").value.trim();
-  const role = document.getElementById("title").value.trim();
-  const comment = document.getElementById("comment").value.trim();
+  const name =
+    document.getElementById("name").value.trim();
+  const role =
+    document.getElementById("title").value.trim();
+  const comment =
+    document.getElementById("comment").value.trim();
 
   if (!name || !role || !comment) {
     alert("Please complete all fields.");
     return;
   }
 
+  // GET APPROXIMATE LOCATION
+let location = "";
+const shareLocation =
+  document.getElementById("shareLocation").checked;
+if (shareLocation) {
+  try {
+    const geoResponse =
+      await fetch("https://ipapi.co/json/");
+    const geoData =
+      await geoResponse.json();
+    location =
+      `${geoData.city}, ${geoData.country_name}`;
+  } catch (error) {
+    console.log("Location unavailable");
+  }
+}
+
   await addDoc(collection(db, "reviews"), {
     name,
     role,
+    location,
     comment,
     approved: false,
     created: Date.now(),
     reviewedOn: Date.now()
   });
 
+
   alert("Review submitted for approval.");
+
   document.getElementById("name").value = "";
-  document.getElementById("title").value = "";  
+  document.getElementById("title").value = "";
   document.getElementById("comment").value = "";
+
 };
+
+
+
+
+
+
 
 async function loadReviews() {
   const querySnapshot = await getDocs(collection(db, "reviews"));
@@ -4356,12 +4405,26 @@ async function loadReviews() {
 if (review.approved) {
   reviewsDiv.innerHTML =
   `
-    <div class="review-card">
-      <div class="review-date">Reviewed on ${formatReviewDate(review.reviewedOn || review.created)}</div>
-      <h5>${escapeHtml(review.name)}</h5>
-      <h4>${escapeHtml(review.role)}</h4>
-      <p>${escapeHtml(review.comment)}</p>
-    </div>
+
+
+	<div class="review-card">
+
+ <div class="review-date">
+  Reviewed on
+  ${formatReviewDate(review.reviewedOn || review.created)}
+  <br>
+	${escapeHtml(review.location || "")}
+</div>
+	<h5>${escapeHtml(review.name)}</h5>
+	<h4>${escapeHtml(review.role)}</h4>
+	<label class="location-toggle">
+  		<input type="checkbox"
+         id="shareLocation"
+         checked>
+  		Show my approximate location
+		</label>
+	<p>${escapeHtml(review.comment)}</p>
+</div>
   `
   + reviewsDiv.innerHTML;
 }
