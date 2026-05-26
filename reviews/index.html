@@ -3931,6 +3931,13 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
             <input type="text" id="title" placeholder="Role">
           </label>
         </div>
+		
+		<label class="location-toggle">
+  			<input type="checkbox"
+         	id="shareLocation"
+         	checked>
+  			Show my approximate location
+		</label>
 
         <label class="review-message">
           <span>Review</span>
@@ -4417,12 +4424,6 @@ if (review.approved) {
 </div>
 	<h5>${escapeHtml(review.name)}</h5>
 	<h4>${escapeHtml(review.role)}</h4>
-	<label class="location-toggle">
-  		<input type="checkbox"
-         id="shareLocation"
-         checked>
-  		Show my approximate location
-		</label>
 	<p>${escapeHtml(review.comment)}</p>
 </div>
   `
