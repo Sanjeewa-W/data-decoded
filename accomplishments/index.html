@@ -3389,8 +3389,25 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 	gap: 12px;
 	flex-wrap: wrap;
 }
-.verify-button-row .elementor-button {
+.verify-button-row .elementor-button,
+.verify-button-row .elementor-button:visited {
+	background-color: var(--ast-global-color-0);
+	border-color: var(--ast-global-color-0);
+	color: var(--ast-global-color-8);
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	line-height: 1em;
+	text-decoration: none;
 	white-space: nowrap;
+}
+.verify-button-row .elementor-button:hover,
+.verify-button-row .elementor-button:focus {
+	background-color: var(--ast-global-color-1);
+	border-color: var(--ast-global-color-1);
+	color: var(--ast-global-color-4);
+	text-decoration: none;
+}
+.ast-single-post .entry-content .verify-button-row a.elementor-button {
+	text-decoration: none;
 }
 </style>
 </head>
