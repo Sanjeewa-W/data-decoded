@@ -3313,6 +3313,46 @@ body .elementor hr {
 	}
 }
 
+/* Slideshow 1 */
+
+.dd-slideshow{
+    position:relative;
+    width:100%;
+    aspect-ratio:750/560;
+    overflow:hidden;
+}
+
+.dd-slideshow img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    animation:fadeShow 30s infinite;
+}
+
+.dd-slideshow img:nth-child(1){
+    animation-delay:0s;
+}
+
+.dd-slideshow img:nth-child(2){
+    animation-delay:10s;
+}
+
+.dd-slideshow img:nth-child(3){
+    animation-delay:20s;
+}
+
+@keyframes fadeShow{
+    0%,30%{
+        opacity:1;
+    }
+    33.33%,100%{
+        opacity:0;
+    }
+}
+
 :root {
 	--e-global-color-astglobalcolor0: #d4af37;
 	--e-global-color-astglobalcolor1: #ead7a1;
@@ -3696,10 +3736,6 @@ Completing this Johns Hopkins specialization allowed me to bridge advanced data 
 
 
 
-
-
-
-
 		<div class="elementor-element elementor-element-724303d e-con-full e-flex e-con e-child" data-id="724303d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 		<div class="elementor-element elementor-element-3c57987 e-con-full e-flex e-con e-child" data-id="3c57987" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-36052af elementor-widget elementor-widget-icon-box" data-id="36052af" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
@@ -3759,8 +3795,39 @@ Completing this Johns Hopkins specialization allowed me to bridge advanced data 
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-4a9e46a elementor-widget elementor-widget-image" data-id="4a9e46a" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" width="750" height="560" src="./Accomp_files/05_Datascience_Methodology-cw.webp" class="attachment-large size-large wp-image-176" alt="project pic" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp 750w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw_300w.webp 300w" sizes="(max-width: 750px) 100vw, 750px" title="Services">															</div>
+<div class="dd-slideshow">
+
+    <img
+        src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp"
+        srcset="
+            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw_300w.webp 300w,
+            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp 750w
+        "
+        sizes="(max-width: 750px) 100vw, 750px"
+        alt="What is Data Science"
+        loading="lazy">
+
+    <img
+        src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp"
+        srcset="
+            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw_300w.webp 300w,
+            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp 750w
+        "
+        sizes="(max-width: 750px) 100vw, 750px"
+        alt="Tools for Data Science"
+        loading="lazy">
+
+    <img
+        src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp"
+        srcset="
+            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw_300w.webp 300w,
+            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp 750w
+        "
+        sizes="(max-width: 750px) 100vw, 750px"
+        alt="Data Science Methodology"
+        loading="lazy">
+
+</div>
 				</div>
 				</div>
 
