@@ -3767,36 +3767,47 @@ Completing this Johns Hopkins specialization allowed me to bridge advanced data 
 				</div>
 				</div>
 	
-<div class="elementor-column elementor-col-50 elementor-top-column elementor-element" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element" data-element_type="column" style="width: 50% !important;">
+    <div class="elementor-widget-wrap elementor-element-populated" style="display: flex !important; flex-direction: column !important; justify-content: flex-start !important; align-items: flex-start !important; padding: 0 !important; width: 100% !important;">
         
         <style>
-        .dd-slideshow-container {
-            width: 100%;
-            /* 1. MOVES DOWN: Adjust this value to push it further down if needed */
-            margin-top: 25px; 
-            /* 2. MOVES LEFT: Aligns the content container completely to the left bound */
-            margin-left: 0; 
-            padding: 0;
+        /* Force the Elementor widget housing to take up 100% space */
+        .dd-slideshow-wrapper-fixed {
+            width: 100% !important;
+            max-width: 100% !important;
+            /* MOVES DOWN: Pushes the entire block down. Increase this number if you want it lower */
+            margin-top: 45px !important; 
+            /* MOVES LEFT: Keeps it completely flush with the left boundary */
+            margin-left: 0 !important;
+            margin-right: auto !important;
+            padding: 0 !important;
         }
 
+        .dd-slideshow-wrapper-fixed .elementor-widget-container {
+            width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        /* Base Slider Construction */
         .dd-slideshow {
-            position: relative;
-            /* 3. MAKES LARGER: Forces full width capability up to its max constraints */
-            width: 100%; 
-            max-width: 540px; /* Standard maximum container bound for Elementor columns */
-            aspect-ratio: 750 / 560;
-            overflow: hidden;
-            border-radius: 8px; 
-            box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+            position: relative !important;
+            /* MAKES LARGER: Forces the container to stretch all the way across its column side */
+            width: 100% !important; 
+            /* This aspect ratio perfectly mirrors Elementor's standard layout values */
+            aspect-ratio: 750 / 560 !important; 
+            overflow: hidden !important;
+            border-radius: 8px !important; 
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.08) !important;
         }
 
+        /* Individual Image Rules */
         .dd-slideshow img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            position: absolute !important;
+            inset: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
             opacity: 0;
             animation-name: ddSlideShow;
             animation-iteration-count: infinite;
@@ -3812,7 +3823,7 @@ Completing this Johns Hopkins specialization allowed me to bridge advanced data 
         }
         </style>
 
-        <div class="elementor-element elementor-element-4a9e46a elementor-widget elementor-widget-html dd-slideshow-container"
+        <div class="elementor-element elementor-element-4a9e46a elementor-widget elementor-widget-html dd-slideshow-wrapper-fixed"
              data-id="4a9e46a"
              data-element_type="widget"
              data-widget_type="html.default">
