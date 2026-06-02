@@ -3768,16 +3768,27 @@ Completing this Johns Hopkins specialization allowed me to bridge advanced data 
 				</div>
 	
 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
+    <div class="elementor-widget-wrap elementor-element-populated" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
         
         <style>
+        .dd-slideshow-container {
+            width: 100%;
+            /* 1. MOVES DOWN: Adjust this value to push it further down if needed */
+            margin-top: 25px; 
+            /* 2. MOVES LEFT: Aligns the content container completely to the left bound */
+            margin-left: 0; 
+            padding: 0;
+        }
+
         .dd-slideshow {
             position: relative;
-            width: 100%;
+            /* 3. MAKES LARGER: Forces full width capability up to its max constraints */
+            width: 100%; 
+            max-width: 540px; /* Standard maximum container bound for Elementor columns */
             aspect-ratio: 750 / 560;
             overflow: hidden;
-            border-radius: 8px; /* Matches standard Elementor image styling */
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+            border-radius: 8px; 
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
         }
 
         .dd-slideshow img {
@@ -3801,7 +3812,7 @@ Completing this Johns Hopkins specialization allowed me to bridge advanced data 
         }
         </style>
 
-        <div class="elementor-element elementor-element-4a9e46a elementor-widget elementor-widget-html"
+        <div class="elementor-element elementor-element-4a9e46a elementor-widget elementor-widget-html dd-slideshow-container"
              data-id="4a9e46a"
              data-element_type="widget"
              data-widget_type="html.default">
