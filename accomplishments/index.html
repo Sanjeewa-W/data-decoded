@@ -3327,6 +3327,7 @@ body .elementor hr {
 	--e-global-color-astglobalcolor8: #2f2f2f;
 }/*# sourceURL=astra-theme-css-inline-css */
 </style>
+
 /* Slideshow 1 */
 <style>
 .dd-slideshow{
@@ -3343,7 +3344,7 @@ body .elementor hr {
     height:100%;
     object-fit:cover;
     opacity:0;
-    animation:fadeShow 30s infinite;
+    animation:ddSlideShow 30s infinite;
 }
 
 .dd-slideshow img:nth-child(1){
@@ -3358,11 +3359,20 @@ body .elementor hr {
     animation-delay:20s;
 }
 
-@keyframes fadeShow{
-    0%,30%{
+@keyframes ddSlideShow{
+    0%{
+        opacity:0;
+    }
+    5%{
         opacity:1;
     }
-    33.33%,100%{
+    30%{
+        opacity:1;
+    }
+    35%{
+        opacity:0;
+    }
+    100%{
         opacity:0;
     }
 }
@@ -3800,41 +3810,47 @@ Completing this Johns Hopkins specialization allowed me to bridge advanced data 
 				</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-4a9e46a elementor-widget elementor-widget-image" data-id="4a9e46a" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-<div class="dd-slideshow">
+				<div class="elementor-element elementor-element-4a9e46a elementor-widget elementor-widget-html"
+     data-id="4a9e46a"
+     data-element_type="widget"
+     data-widget_type="html.default">
 
-    <img
-        src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp"
-        srcset="
-            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw_300w.webp 300w,
-            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp 750w
-        "
-        sizes="(max-width: 750px) 100vw, 750px"
-        alt="What is Data Science"
-        loading="lazy">
+    <div class="elementor-widget-container">
 
-    <img
-        src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp"
-        srcset="
-            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw_300w.webp 300w,
-            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp 750w
-        "
-        sizes="(max-width: 750px) 100vw, 750px"
-        alt="Tools for Data Science"
-        loading="lazy">
+        <div class="dd-slideshow">
 
-    <img
-        src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp"
-        srcset="
-            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw_300w.webp 300w,
-            https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp 750w
-        "
-        sizes="(max-width: 750px) 100vw, 750px"
-        alt="Data Science Methodology"
-        loading="lazy">
+            <img
+                src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp"
+                srcset="
+                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw_300w.webp 300w,
+                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp 750w
+                "
+                sizes="(max-width: 750px) 100vw, 750px"
+                alt="What is Data Science">
+
+            <img
+                src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp"
+                srcset="
+                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw_300w.webp 300w,
+                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp 750w
+                "
+                sizes="(max-width: 750px) 100vw, 750px"
+                alt="Tools for Data Science">
+
+            <img
+                src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp"
+                srcset="
+                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw_300w.webp 300w,
+                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp 750w
+                "
+                sizes="(max-width: 750px) 100vw, 750px"
+                alt="Data Science Methodology">
+
+        </div>
+
+    </div>
 
 </div>
-				</div>
 				</div>
 
 
