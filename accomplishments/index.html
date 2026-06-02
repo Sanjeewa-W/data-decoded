@@ -3328,55 +3328,8 @@ body .elementor hr {
 }/*# sourceURL=astra-theme-css-inline-css */
 </style>
 
-/* Slideshow 1 */
-<style>
-.dd-slideshow{
-    position:relative;
-    width:100%;
-    aspect-ratio:750/560;
-    overflow:hidden;
-}
 
-.dd-slideshow img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0;
-    animation:ddSlideShow 30s infinite;
-}
 
-.dd-slideshow img:nth-child(1){
-    animation-delay:0s;
-}
-
-.dd-slideshow img:nth-child(2){
-    animation-delay:10s;
-}
-
-.dd-slideshow img:nth-child(3){
-    animation-delay:20s;
-}
-
-@keyframes ddSlideShow{
-    0%{
-        opacity:0;
-    }
-    5%{
-        opacity:1;
-    }
-    30%{
-        opacity:1;
-    }
-    35%{
-        opacity:0;
-    }
-    100%{
-        opacity:0;
-    }
-}
-</style>
 
 
 
@@ -3466,6 +3419,35 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 	text-decoration: none;
 }
 </style>
+/* slide show 1 */
+<style>
+.dd-slideshow {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 750 / 560;
+    overflow: hidden;
+}
+.dd-slideshow img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation-name: ddSlideShow;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ddSlideShow {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    30% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
+</style>
+
+
 </head>
 
 <body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="wp-singular page-template-default page page-id-643 wp-custom-logo wp-embed-responsive wp-theme-astra surerank-1.6.5 ast-page-builder-template ast-no-sidebar astra-4.12.4 ast-single-post ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header elementor-default elementor-kit-5 elementor-page elementor-page-643 customize-support dialog-body dialog-buttons-body dialog-container dialog-buttons-container e--ua-blink e--ua-chrome e--ua-webkit ast-desktop" style="" data-elementor-device-mode="desktop">
@@ -3810,46 +3792,18 @@ Completing this Johns Hopkins specialization allowed me to bridge advanced data 
 				</div>
 				</div>
 				</div>
+	
 				<div class="elementor-element elementor-element-4a9e46a elementor-widget elementor-widget-html"
      data-id="4a9e46a"
      data-element_type="widget"
      data-widget_type="html.default">
-
     <div class="elementor-widget-container">
-
         <div class="dd-slideshow">
-
-            <img
-                src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp"
-                srcset="
-                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw_300w.webp 300w,
-                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp 750w
-                "
-                sizes="(max-width: 750px) 100vw, 750px"
-                alt="What is Data Science">
-
-            <img
-                src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp"
-                srcset="
-                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw_300w.webp 300w,
-                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp 750w
-                "
-                sizes="(max-width: 750px) 100vw, 750px"
-                alt="Tools for Data Science">
-
-            <img
-                src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp"
-                srcset="
-                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw_300w.webp 300w,
-                    https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp 750w
-                "
-                sizes="(max-width: 750px) 100vw, 750px"
-                alt="Data Science Methodology">
-
+            <img src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw_300w.webp 300w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/03_What_is_Datascience_cw.webp 750w" sizes="(max-width: 750px) 100vw, 750px" alt="What is Data Science">
+            <img src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw_300w.webp 300w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/04_Tools_for_Data_Science-cw.webp 750w" sizes="(max-width: 750px) 100vw, 750px" alt="Tools for Data Science">
+            <img src="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw_300w.webp 300w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/05_Datascience_Methodology-cw.webp 750w" sizes="(max-width: 750px) 100vw, 750px" alt="Data Science Methodology">
         </div>
-
     </div>
-
 </div>
 				</div>
 
@@ -4436,4 +4390,27 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 /*! This file is auto-generated */
 const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
 //# sourceURL=https://sanjeewa-w.github.io/data-decoded/wp-includes/js/wp-emoji-loader.min.js
-</script><div id="a11y-speak-assertive" class="a11y-speak-region" style="position:absolute;margin:-1px;padding:0;height:1px;width:1px;overflow:hidden;clip-path:inset(50%);border:0;word-wrap:normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-polite" class="a11y-speak-region" style="position:absolute;margin:-1px;padding:0;height:1px;width:1px;overflow:hidden;clip-path:inset(50%);border:0;word-wrap:normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div></body></html>
+</script><div id="a11y-speak-assertive" class="a11y-speak-region" style="position:absolute;margin:-1px;padding:0;height:1px;width:1px;overflow:hidden;clip-path:inset(50%);border:0;word-wrap:normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-polite" class="a11y-speak-region" style="position:absolute;margin:-1px;padding:0;height:1px;width:1px;overflow:hidden;clip-path:inset(50%);border:0;word-wrap:normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const slideshows = document.querySelectorAll('.dd-slideshow');
+    slideshows.forEach(slideshow => {
+        const images = slideshow.querySelectorAll('img');
+        const totalImages = images.length;
+        if (totalImages === 0) return;
+
+        const timePerImage = 10; 
+        const totalDuration = totalImages * timePerImage;
+
+        images.forEach((img, index) => {
+            img.style.animationDuration = totalDuration + 's';
+            img.style.animationDelay = (index * timePerImage) + 's';
+        });
+    });
+});
+</script>
+
+
+</body>
+</html>
