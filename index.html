@@ -3322,25 +3322,37 @@ body .elementor hr {
 
 
 
-/* Tablet Layout: Scale down and pull upwards */
-@media (max-width: 1024px) and (min-width: 768px) {
-    .elementor-widget-container img[src*="Data_Analysis4.png"] {
-        width: 75% !important;
-        height: auto !important;
-        display: block;
-        margin: -50px auto 0 auto !important; /* Negative top margin pulls the image UP */
+/* --- TABLET VIEW (25% smaller and centered higher) --- */
+    @media (max-width: 1024px) and (min-width: 768px) {
+        .elementor-element.elementor-element-50e93b4 {
+            width: 75% !important;               
+            bottom: auto !important;             
+            transform: translateY(-120px) !important; 
+            left: 0 !important;
+            right: 0 !important;
+            margin: 0 auto !important;           
+        }
+        .elementor-element.elementor-element-50e93b4 img {
+            width: 100% !important;
+            height: auto !important;
+        }
     }
-}
 
-/* Mobile Layout: Scale down and pull upwards */
-@media (max-width: 767px) {
-    .elementor-widget-container img[src*="Data_Analysis4.png"] {
-        width: 50% !important;
-        height: auto !important;
-        display: block;
-        margin: -150px auto 0 auto !important; /* Pulls the image UP on mobile */
+    /* --- MOBILE VIEW (50% smaller and centered higher) --- */
+    @media (max-width: 767px) {
+        .elementor-element.elementor-element-50e93b4 {
+            width: 50% !important;               
+            bottom: auto !important;             
+            transform: translateY(-80px) !important; 
+            left: 0 !important;
+            right: 0 !important;
+            margin: 0 auto !important;           
+        }
+        .elementor-element.elementor-element-50e93b4 img {
+            width: 100% !important;
+            height: auto !important;
+        }
     }
-}
 
 
 
