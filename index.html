@@ -3322,22 +3322,25 @@ body .elementor hr {
 
 
 
-/* Tablet Layout: Scale image down by 75% (retain 25% original box scope) */
+/* Tablet Layout: Scale down and pull upwards */
 @media (max-width: 1024px) and (min-width: 768px) {
     .elementor-widget-container img[src*="Data_Analysis4.png"] {
         width: 75% !important;
         height: auto !important;
+        display: block;
+        margin: -50px auto 0 auto !important; /* Negative top margin pulls the image UP */
     }
 }
 
-/* Mobile Layout: Scale image down by 50% (retain 50% original box scope) */
+/* Mobile Layout: Scale down and pull upwards */
 @media (max-width: 767px) {
     .elementor-widget-container img[src*="Data_Analysis4.png"] {
         width: 50% !important;
         height: auto !important;
+        display: block;
+        margin: -30px auto 0 auto !important; /* Pulls the image UP on mobile */
     }
 }
-
 
 
 
