@@ -3322,22 +3322,37 @@ body .elementor hr {
 
 
 
-/* Tablet Layout: Scale image down by 75% (retain 25% original box scope) */
-@media (max-width: 1024px) and (min-width: 768px) {
-    .elementor-widget-container img[src*="Data_Analysis4.png"] {
-        width: 75% !important;
-        height: auto !important;
+/* --- TABLET VIEW (75% smaller and centered higher) --- */
+    @media (max-width: 1024px) and (min-width: 768px) {
+        .elementor-element.elementor-element-50e93b4 {
+            width: 75% !important;               
+            bottom: auto !important;             
+            transform: translateY(-30px) !important; 
+            left: 0 !important;
+            right: 0 !important;
+            margin: 0 auto !important;           
+        }
+        .elementor-element.elementor-element-50e93b4 img {
+            width: 100% !important;
+            height: auto !important;
+        }
     }
-}
 
-/* Mobile Layout: Scale image down by 50% (retain 50% original box scope) */
-@media (max-width: 767px) {
-    .elementor-widget-container img[src*="Data_Analysis4.png"] {
-        width: 50% !important;
-        height: auto !important;
+    /* --- MOBILE VIEW (50% smaller and centered higher) --- */
+    @media (max-width: 767px) {
+        .elementor-element.elementor-element-50e93b4 {
+            width: 50% !important;               
+            bottom: auto !important;             
+            transform: translateY(-25px) !important; 
+            left: 0 !important;
+            right: 0 !important;
+            margin: 0 auto !important;           
+        }
+        .elementor-element.elementor-element-50e93b4 img {
+            width: 100% !important;
+            height: auto !important;
+        }
     }
-}
-
 
 
 
