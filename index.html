@@ -3319,6 +3319,28 @@ body .elementor hr {
 
 
 /*# sourceURL=astra-theme-css-inline-css */
+
+
+
+/* Tablet Layout: Scale image down by 75% (retain 25% original box scope) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .elementor-widget-container img[src*="Data_Analysis4.png"] {
+        width: 75% !important;
+        height: auto !important;
+    }
+}
+
+/* Mobile Layout: Scale image down by 50% (retain 50% original box scope) */
+@media (max-width: 767px) {
+    .elementor-widget-container img[src*="Data_Analysis4.png"] {
+        width: 50% !important;
+        height: auto !important;
+    }
+}
+
+
+
+
 </style>
 <link rel="stylesheet" id="astra-google-fonts-css" href="https://fonts.googleapis.com/css?family=Figtree%3A400%2C&amp;display=fallback&amp;ver=4.12.4" media="all">
 <style id="wp-emoji-styles-inline-css">
