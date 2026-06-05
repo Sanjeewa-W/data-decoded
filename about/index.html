@@ -3250,104 +3250,93 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 
 		
 			
-<div class="elementor-container elementor-column-gap-default" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+<div class="analytics-custom-grid">
     
     <style>
-        .analytics-box {
+        /* Clean, independent structural grid */
+        .analytics-custom-grid {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            gap: 20px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        /* ONE single light gradient box per item */
+        .analytics-single-box {
             flex: 1 1 calc(25% - 20px); /* 4 columns side-by-side on desktop */
             min-width: 220px;
+            box-sizing: border-box;
             
-            /* High-end Dark Gradient Fill */
-            background: linear-gradient(135deg, #1e222b 0%, #11141a 100%); 
+            /* Clean, Lighter Gradient Fill */
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%); 
             
-            /* Subtle border and rounding to elevate the card look */
-            border: 1px solid rgba(255, 204, 0, 0.15); 
-            border-radius: 12px;
+            /* Professional Borders & Shadows */
+            border: 1px solid #d1d8e0; 
+            border-radius: 8px;
             padding: 25px 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
         }
 
-        /* Hover effect to make them interactive */
-        .analytics-box:hover {
-            transform: translateY(-5px);
-            border-color: rgba(255, 204, 0, 0.6); /* Gold accent brightens on hover */
-            box-shadow: 0 8px 25px rgba(255, 204, 0, 0.1);
+        /* Smooth interactivity */
+        .analytics-single-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-color: #b0bbc7;
         }
 
-        /* Adjust text colors inside the card for high contrast */
-        .analytics-box .elementor-icon-box-title span {
-            color: #ffcc00 !important; /* Gold text for headings */
-            font-size: 1.15rem;
-            font-weight: 600;
+        /* Darker, highly readable typography */
+        .analytics-title {
+            color: #1a202c !important; /* Deep dark grey/black */
+            font-size: 1.1rem !important;
+            font-weight: 700 !important;
+            margin: 0 0 10px 0 !important;
+            padding: 0 !important;
+            letter-spacing: 0.3px;
         }
 
-        .analytics-box .elementor-icon-box-description {
-            color: #e0e6ed !important; /* Soft white/silver for description readability */
-            font-size: 0.9rem;
-            line-height: 1.5;
-            margin-top: 8px;
+        .analytics-desc {
+            color: #4a5568 !important; /* Crisp charcoal text */
+            font-size: 0.9rem !important;
+            line-height: 1.5 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            font-weight: 500 !important;
         }
 
-        /* Mobile fallback configuration */
+        /* Mobile Layout: Stacks perfectly row-by-row */
         @media (max-width: 767px) {
-            .analytics-box {
-                flex: 1 1 100% !important; /* Fully stacks 100% wide on mobile screens */
-                margin-bottom: 15px;
+            .analytics-custom-grid {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .analytics-single-box {
+                width: 100% !important;
+                flex: 1 1 100% !important;
             }
         }
     </style>
 
-    <div class="analytics-box elementor-element elementor-element-5440140 elementor-widget elementor-widget-icon-box">
-        <div class="elementor-widget-container">
-            <div class="elementor-icon-box-wrapper">
-                <div class="elementor-icon-box-content">
-                    <h4 class="elementor-icon-box-title">
-                        <span>Clinical Data Analysis</span>
-                    </h4>
-                    <p class="elementor-icon-box-description">Optimizing patient outcomes via clinical trends</p>
-                </div>
-            </div>
-        </div>
+    <div class="analytics-single-box">
+        <h4 class="analytics-title">Clinical Data Analysis</h4>
+        <p class="analytics-desc">Optimizing patient outcomes via clinical trends</p>
     </div>
 
-    <div class="analytics-box elementor-element elementor-element-8612075 elementor-widget elementor-widget-icon-box">
-        <div class="elementor-widget-container">
-            <div class="elementor-icon-box-wrapper">
-                <div class="elementor-icon-box-content">
-                    <h4 class="elementor-icon-box-title">
-                        <span>Health Informatics</span>
-                    </h4>
-                    <p class="elementor-icon-box-description">Data governance & workflow architecture</p>
-                </div>
-            </div>
-        </div>
+    <div class="analytics-single-box">
+        <h4 class="analytics-title">Health Informatics</h4>
+        <p class="analytics-desc">Data governance & workflow architecture</p>
     </div>
 
-    <div class="analytics-box elementor-element elementor-element-9b86ed1 elementor-widget elementor-widget-icon-box">
-        <div class="elementor-widget-container">
-            <div class="elementor-icon-box-wrapper">
-                <div class="elementor-icon-box-content">
-                    <h4 class="elementor-icon-box-title">
-                        <span>Knowledge Networks</span>
-                    </h4>
-                    <p class="elementor-icon-box-description">Connecting clinicians countrywide online</p>
-                </div>
-            </div>
-        </div>
+    <div class="analytics-single-box">
+        <h4 class="analytics-title">Knowledge Networks</h4>
+        <p class="analytics-desc">Connecting clinicians countrywide online</p>
     </div>
 
-    <div class="analytics-box elementor-element elementor-element-6df7e6e elementor-widget elementor-widget-icon-box">
-        <div class="elementor-widget-container">
-            <div class="elementor-icon-box-wrapper">
-                <div class="elementor-icon-box-content">
-                    <h4 class="elementor-icon-box-title">
-                        <span>Research Theories</span>
-                    </h4>
-                    <p class="elementor-icon-box-description">Testing data tools & modern statistical updates</p>
-                </div>
-            </div>
-        </div>
+    <div class="analytics-single-box">
+        <h4 class="analytics-title">Research Theories</h4>
+        <p class="analytics-desc">Testing data tools & modern statistical updates</p>
     </div>
 
 </div>
