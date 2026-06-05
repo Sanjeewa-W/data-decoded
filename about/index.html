@@ -3245,101 +3245,112 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 
 
 
-<div class="elementor-element elementor-element-5440140 elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="5440140" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
 
-						<div class="elementor-icon-box-icon">
-				
-						</div>
+
+
+		
 			
-						<div class="elementor-icon-box-content">
+<div class="elementor-container elementor-column-gap-default" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+    
+    <style>
+        .analytics-box {
+            flex: 1 1 calc(25% - 20px); /* 4 columns side-by-side on desktop */
+            min-width: 220px;
+            
+            /* High-end Dark Gradient Fill */
+            background: linear-gradient(135deg, #1e222b 0%, #11141a 100%); 
+            
+            /* Subtle border and rounding to elevate the card look */
+            border: 1px solid rgba(255, 204, 0, 0.15); 
+            border-radius: 12px;
+            padding: 25px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
 
-									<h4 class="elementor-icon-box-title">
-						<span>
-							Awwwards						</span>
-					</h4>
-				
-									<p class="elementor-icon-box-description">
-						Site of the day					</p>
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-8612075 elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="8612075" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
+        /* Hover effect to make them interactive */
+        .analytics-box:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 204, 0, 0.6); /* Gold accent brightens on hover */
+            box-shadow: 0 8px 25px rgba(255, 204, 0, 0.1);
+        }
 
-						<div class="elementor-icon-box-icon">
-				
-						</div>
-			
-						<div class="elementor-icon-box-content">
+        /* Adjust text colors inside the card for high contrast */
+        .analytics-box .elementor-icon-box-title span {
+            color: #ffcc00 !important; /* Gold text for headings */
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
 
-									<h4 class="elementor-icon-box-title">
-						<span>
-							CSS Design Award						</span>
-					</h4>
-				
-									<p class="elementor-icon-box-description">
-						CSS Ninja					</p>
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-9b86ed1 elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="9b86ed1" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
+        .analytics-box .elementor-icon-box-description {
+            color: #e0e6ed !important; /* Soft white/silver for description readability */
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-top: 8px;
+        }
 
-						<div class="elementor-icon-box-icon">
-				</div>
-			
-						<div class="elementor-icon-box-content">
+        /* Mobile fallback configuration */
+        @media (max-width: 767px) {
+            .analytics-box {
+                flex: 1 1 100% !important; /* Fully stacks 100% wide on mobile screens */
+                margin-bottom: 15px;
+            }
+        }
+    </style>
 
-									<h4 class="elementor-icon-box-title">
-						<span>
-							CSS Design Award						</span>
-					</h4>
-				
-									<p class="elementor-icon-box-description">
-						CSS Champion					</p>
-				
-			</div>
-			
+    <div class="analytics-box elementor-element elementor-element-5440140 elementor-widget elementor-widget-icon-box">
+        <div class="elementor-widget-container">
+            <div class="elementor-icon-box-wrapper">
+                <div class="elementor-icon-box-content">
+                    <h4 class="elementor-icon-box-title">
+                        <span>Clinical Data Analysis</span>
+                    </h4>
+                    <p class="elementor-icon-box-description">Optimizing patient outcomes via clinical trends</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-6df7e6e elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="6df7e6e" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
+    <div class="analytics-box elementor-element elementor-element-8612075 elementor-widget elementor-widget-icon-box">
+        <div class="elementor-widget-container">
+            <div class="elementor-icon-box-wrapper">
+                <div class="elementor-icon-box-content">
+                    <h4 class="elementor-icon-box-title">
+                        <span>Health Informatics</span>
+                    </h4>
+                    <p class="elementor-icon-box-description">Data governance & workflow architecture</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-						<div class="elementor-icon-box-icon">
-				</div>
-			
-						<div class="elementor-icon-box-content">
+    <div class="analytics-box elementor-element elementor-element-9b86ed1 elementor-widget elementor-widget-icon-box">
+        <div class="elementor-widget-container">
+            <div class="elementor-icon-box-wrapper">
+                <div class="elementor-icon-box-content">
+                    <h4 class="elementor-icon-box-title">
+                        <span>Knowledge Networks</span>
+                    </h4>
+                    <p class="elementor-icon-box-description">Connecting clinicians countrywide online</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-									<h4 class="elementor-icon-box-title">
-						<span>
-							Awwwards						</span>
-					</h4>
-				
-									<p class="elementor-icon-box-description">
-						Site of the day					</p>
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
+    <div class="analytics-box elementor-element elementor-element-6df7e6e elementor-widget elementor-widget-icon-box">
+        <div class="elementor-widget-container">
+            <div class="elementor-icon-box-wrapper">
+                <div class="elementor-icon-box-content">
+                    <h4 class="elementor-icon-box-title">
+                        <span>Research Theories</span>
+                    </h4>
+                    <p class="elementor-icon-box-description">Testing data tools & modern statistical updates</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-
+</div>
 
 
 
@@ -3476,7 +3487,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 				</div>
 		<div class="elementor-element elementor-element-8e5da3d e-flex e-con-boxed e-con e-parent" data-id="8e5da3d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-bc224b8 e-grid e-con-full e-con e-child" data-id="bc224b8" data-element_type="container" data-e-type="container">
+		
 				<div class="elementor-element elementor-element-5440140 elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="5440140" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-box-wrapper">
@@ -3573,8 +3584,8 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 		</div>
 						</div>
 				</div>
-				</div>
 					</div>
+					
 				</div>
 		<div class="elementor-element elementor-element-37c9882 e-flex e-con-boxed e-con e-parent" data-id="37c9882" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
