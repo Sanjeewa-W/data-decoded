@@ -3252,44 +3252,14 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 			
 <div class="elementor-container elementor-column-gap-default" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
     
+<div class="elementor-container elementor-column-gap-default" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+    
     <style>
+        /* This handles the responsive layout without needing an external stylesheet */
         .analytics-box {
             flex: 1 1 calc(25% - 20px); /* 4 columns side-by-side on desktop */
             min-width: 220px;
-            
-            /* High-end Dark Gradient Fill */
-            background: linear-gradient(135deg, #1e222b 0%, #11141a 100%); 
-            
-            /* Subtle border and rounding to elevate the card look */
-            border: 1px solid rgba(255, 204, 0, 0.15); 
-            border-radius: 12px;
-            padding: 25px 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s ease;
         }
-
-        /* Hover effect to make them interactive */
-        .analytics-box:hover {
-            transform: translateY(-5px);
-            border-color: rgba(255, 204, 0, 0.6); /* Gold accent brightens on hover */
-            box-shadow: 0 8px 25px rgba(255, 204, 0, 0.1);
-        }
-
-        /* Adjust text colors inside the card for high contrast */
-        .analytics-box .elementor-icon-box-title span {
-            color: #ffcc00 !important; /* Gold text for headings */
-            font-size: 1.15rem;
-            font-weight: 600;
-        }
-
-        .analytics-box .elementor-icon-box-description {
-            color: #e0e6ed !important; /* Soft white/silver for description readability */
-            font-size: 0.9rem;
-            line-height: 1.5;
-            margin-top: 8px;
-        }
-
-        /* Mobile fallback configuration */
         @media (max-width: 767px) {
             .analytics-box {
                 flex: 1 1 100% !important; /* Fully stacks 100% wide on mobile screens */
@@ -3297,6 +3267,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
             }
         }
     </style>
+	
 
 <div class="analytics-box elementor-element elementor-element-5440140 elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="5440140" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
         <div class="elementor-widget-container">
