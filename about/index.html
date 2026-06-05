@@ -3249,94 +3249,97 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 
 
 		
-			
-<div class="analytics-custom-grid">
+<div class="portfolio-custom-analytics-grid">
     
     <style>
-        /* Clean, independent structural grid */
-        .analytics-custom-grid {
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: space-between; 
-            gap: 20px;
-            width: 100%;
-            margin: 20px 0;
+        /* Forces columns side-by-side on desktop, ignoring template overrides */
+        .portfolio-custom-analytics-grid {
+            display: flex !important; 
+            flex-direction: row !important;
+            flex-wrap: wrap !important; 
+            justify-content: space-between !important; 
+            gap: 24px !important;
+            width: 100% !important;
+            margin: 30px 0 !important;
+            box-sizing: border-box !important;
         }
 
-        /* ONE single light gradient box per item */
-        .analytics-single-box {
-            flex: 1 1 calc(25% - 20px); /* 4 columns side-by-side on desktop */
-            min-width: 220px;
-            box-sizing: border-box;
+        /* ONE single independent box layout per item */
+        .analytics-clean-card {
+            flex: 1 1 calc(25% - 24px) !important; /* 4 strict columns desktop */
+            min-width: 220px !important;
+            box-sizing: border-box !important;
             
-            /* Clean, Lighter Gradient Fill */
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%); 
+            /* Clean, Premium Lighter Gradient Fill */
+            background: linear-gradient(135deg, #f8fafd 0%, #e9edf5 100%) !important; 
             
-            /* Professional Borders & Shadows */
-            border: 1px solid #d1d8e0; 
-            border-radius: 8px;
-            padding: 25px 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
+            /* Highly Rounded Corners & Soft Shadow */
+            border: 1px solid #cfe0f0 !important; 
+            border-radius: 20px !important; /* Significantly rounder corners */
+            padding: 30px 24px !important;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04) !important;
+            transition: all 0.3s ease-in-out !important;
+            text-align: left !important;
         }
 
-        /* Smooth interactivity */
-        .analytics-single-box:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            border-color: #b0bbc7;
+        /* Hover elevation effect */
+        .analytics-clean-card:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08) !important;
+            border-color: #b3cbe3 !important;
         }
 
-        /* Darker, highly readable typography */
-        .analytics-title {
-            color: #1a202c !important; /* Deep dark grey/black */
-            font-size: 1.1rem !important;
-            font-weight: 700 !important;
-            margin: 0 0 10px 0 !important;
+        /* Clean, Large, Crisp Typography (Not too thick) */
+        .card-analytics-title {
+            color: #111622 !important; /* Deep contrast dark text */
+            font-size: 1.4rem !important; /* Increased font size */
+            font-weight: 500 !important; /* Clean, professional weight - not overly bold */
+            margin: 0 0 12px 0 !important;
             padding: 0 !important;
-            letter-spacing: 0.3px;
+            line-height: 1.3 !important;
+            letter-spacing: -0.2px !important;
         }
 
-        .analytics-desc {
-            color: #4a5568 !important; /* Crisp charcoal text */
-            font-size: 0.9rem !important;
-            line-height: 1.5 !important;
+        .card-analytics-desc {
+            color: #4b586e !important; /* Clear charcoal text */
+            font-size: 0.95rem !important;
+            line-height: 1.6 !important;
             margin: 0 !important;
             padding: 0 !important;
-            font-weight: 500 !important;
+            font-weight: 400 !important;
         }
 
-        /* Mobile Layout: Stacks perfectly row-by-row */
+        /* Mobile Breakpoint: Enforces perfect row-by-row structural collapse */
         @media (max-width: 767px) {
-            .analytics-custom-grid {
-                flex-direction: column;
-                gap: 15px;
+            .portfolio-custom-analytics-grid {
+                flex-direction: column !important;
+                gap: 16px !important;
             }
-            .analytics-single-box {
+            .analytics-clean-card {
                 width: 100% !important;
                 flex: 1 1 100% !important;
             }
         }
     </style>
 
-    <div class="analytics-single-box">
-        <h4 class="analytics-title">Clinical Data Analysis</h4>
-        <p class="analytics-desc">Optimizing patient outcomes via clinical trends</p>
+    <div class="analytics-clean-card">
+        <h4 class="card-analytics-title">Clinical Data Analysis</h4>
+        <p class="card-analytics-desc">Optimizing patient outcomes via clinical trends</p>
     </div>
 
-    <div class="analytics-single-box">
-        <h4 class="analytics-title">Health Informatics</h4>
-        <p class="analytics-desc">Data governance & workflow architecture</p>
+    <div class="analytics-clean-card">
+        <h4 class="card-analytics-title">Health Informatics</h4>
+        <p class="card-analytics-desc">Data governance & workflow architecture</p>
     </div>
 
-    <div class="analytics-single-box">
-        <h4 class="analytics-title">Knowledge Networks</h4>
-        <p class="analytics-desc">Connecting clinicians countrywide online</p>
+    <div class="analytics-clean-card">
+        <h4 class="card-analytics-title">Knowledge Networks</h4>
+        <p class="card-analytics-desc">Connecting clinicians countrywide online</p>
     </div>
 
-    <div class="analytics-single-box">
-        <h4 class="analytics-title">Research Theories</h4>
-        <p class="analytics-desc">Testing data tools & modern statistical updates</p>
+    <div class="analytics-clean-card">
+        <h4 class="card-analytics-title">Research Theories</h4>
+        <p class="card-analytics-desc">Testing data tools & modern statistical updates</p>
     </div>
 
 </div>
