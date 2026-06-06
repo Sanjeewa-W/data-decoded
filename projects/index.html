@@ -2989,86 +2989,93 @@ body .elementor hr {
    Responsive Project Grid & Fluid Oval Button System
    ========================================================================== */
 
-/* Main Multi-Column Display Container Box */
-.project-container {
-  display: flex;
-  flex-direction: row;
-  gap: 36px;                 /* Defines clear side-by-side gap width between layout objects */
-  margin-bottom: 52px;       /* Margin spacing to cleanly isolate subsequent projects down the page */
-  align-items: stretch;      /* Keeps the thumbnail boxes and textual grid columns identically tall */
+/* ==========================================================================
+   Single Column Portfolio & Slim Button System Overrides
+   ========================================================================== */
+
+/* 1. Neutralize Elementor Parent Grid Column Layout Traps */
+.elementor-widget-container .e-grid {
+    display: block !important; /* Strips out side-by-side grid splitting entirely */
+    width: 100% !important;
 }
 
-/* Outer Graphic bounding frame with safe concentric curvature handling */
+/* 2. Main Structural Container - Pure Single Column Stack */
+.project-container {
+    display: block !important;   /* Forces structural elements to stack downward */
+    width: 100% !important;
+    margin-bottom: 60px !important; /* Balanced spacing between individual project rows */
+}
+
+/* 3. Maintain Original Canvas Box Handling & Proportions */
 .project-image-box {
-  flex: 1;
-  max-width: 45%;            /* Limits responsive footprint on full screen laptop presentations */
-  border-radius: 12px;       /* Sets outer aesthetic curvature path limits */
-  overflow: hidden;          /* CRITICAL: Masks image corner vectors dynamically without pixel leaking */
-  display: flex;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px !important; /* Clean visual space right below the image box */
+    border-radius: 12px !important;  /* Corner curvature handling */
+    overflow: hidden !important;     /* Smoothly clips image bounds along the border radius */
 }
 
 .project-image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;         /* Preserves aspect-ratio composition values seamlessly */
+    width: 100% !important;
+    height: auto !important;         /* Preserves native aspect ratio constraints */
+    object-fit: contain !important;  /* Maintains full raw background image metrics without scaling */
+    display: block !important;
 }
 
-/* Vertical Typography and Abstract content mapping column */
+/* 4. Text Details Layout Spacing Group */
 .project-content-box {
-  flex: 1.3;
-  display: flex;
-  flex-direction: column;    /* Vertically aligns textual groupings on a clean top-to-bottom axis */
+    width: 100% !important;
+    display: block !important;
 }
 
-/* Aligns title vectors nicely alongside your integrated SVG icons */
 .project-title {
-  display: flex;
-  align-items: center;       /* Vertical midline alignment adjustment for inline headings */
-  gap: 6px;
-  margin-bottom: 6px;
+    display: flex !important;
+    align-items: center !important;  /* Straight line tracking for title text and inline arrow SVG */
+    gap: 8px !important;
+    margin-top: 0px !important;
+    margin-bottom: 6px !important;
 }
 
 .project-year {
-  display: inline-block;
-  margin-bottom: 14px;
+    display: inline-block !important;
+    margin-bottom: 12px !important;
 }
 
 .project-description {
-  font-family: 'Figtree', sans-serif; /* Coordinates font choice precisely with baseline theme guidelines */
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--ast-global-color-3);   /* Adheres cleanly to standard secondary descriptive body colors */
-  margin-top: 8px;
+    font-family: 'Figtree', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: var(--ast-global-color-3) !important;
+    margin-top: 8px !important;
+    margin-bottom: 20px !important; /* Space separating abstract text from button */
 }
 
-/* Ergonomic Pill-Shaped Oval Call-to-Action Link Element */
+/* 5. Sleek, Slimmed, Compact Oval Download Button */
 .btn-download-oval {
-  margin-top: auto;          /* Pushes down the element to align exactly with the lowest layout margin of the image */
-  align-self: flex-start;    /* Constraints text stretching to wrap the button bounds snugly around content */
-  
-  /* Typography Configuration matches main interactive layout variables */
-  font-family: Helvetica, Verdana, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none !important;
-  text-align: center;
-  
-  /* Color layout tracking variables bound to global Astra design configurations */
-  background-color: var(--ast-global-color-0, #046BD2);
-  color: #ffffff !important;
-  
-  /* Precision Oval Border Curve Engineering */
-  padding: 12px 28px;
-  border-radius: 100px;      /* Implements a fully flowing fluid capsule outline profile */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
-  transition: background-color 0.2s ease-in-out, transform 0.15s ease;
+    display: inline-block !important; /* Snug wrapping framework that hugs text tightly */
+    
+    /* Global Color System Integrations */
+    background-color: var(--ast-global-color-0, #046BD2) !important;
+    color: #ffffff !important;
+    
+    /* Slim Padding & Small Oval Curvature */
+    padding: 8px 24px !important;    /* Trimmed down vertical height padding to look sleek */
+    border-radius: 20px !important;  /* Smaller, clean semi-oval presentation contour */
+    
+    /* Typography Rules */
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 14px !important;      /* Balanced reading hierarchy sizing */
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05) !important;
+    transition: background-color 0.15s ease-in-out !important;
 }
 
-/* Focus and Action Hovers mapped to match main site colors */
+/* Button Interactions */
 .btn-download-oval:hover,
 .btn-download-oval:focus {
-  background-color: var(--ast-global-color-1, #0352a1);
-  transform: translateY(-1px);
+    background-color: var(--ast-global-color-1, #0352a1) !important;
+    text-decoration: none !important;
 }
 
 /* ==========================================================================
@@ -3710,7 +3717,10 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
     
   </div>
 </div>
-				</div>
+		
+
+
+</div>
 				</div>
 					</div>
 		</div>
