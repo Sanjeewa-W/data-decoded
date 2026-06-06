@@ -2986,96 +2986,111 @@ body .elementor hr {
 
 
 /* ==========================================================================
-   Side-by-Side 50/50 Project Layout System (with Slim Button Adjustments)
+   Side-by-Side 50/50 Project Layout System (Grey Card Style with Image/Title Shrink)
    ========================================================================== */
 
-/* 1. Neutralize Elementor's default grid layouts */
+/* Neutralize Elementor's default grid layouts */
 .elementor-widget-container .e-grid {
     display: block !important;
     width: 100% !important;
 }
 
-/* 2. Setup Main Side-by-Side Flex Split */
+/* 1. Main Project Card: Grey background, round cornered container box (Services Page Style) */
 .project-container {
     display: flex !important;
     flex-direction: row !important;
-    align-items: stretch !important; /* Forces text container and image to be the same height */
-    gap: 40px !important;            /* Space between the image and the content column */
+    align-items: stretch !important; /* Keeps image and text columns equal height */
+    gap: 40px !important;            /* Space between the image and content */
     width: 100% !important;
-    margin-bottom: 65px !important;  /* Elegant spacing between separate project blocks */
+    margin-bottom: 45px !important;  /* Space between separate project containers */
+    
+    /* Services Page Box Styling */
+    background-color: #f7f7f7 !important; /* Soft grey background */
+    border-radius: 20px !important;       /* Clean round cornered card box */
+    padding: 30px !important;             /* Inner padding inside the grey box */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02) !important; /* Subtle card shadow */
 }
 
-/* 3. Left Side: Image Canvas Custom Sizing (Takes exactly 50%) */
+/* 2. Left Side: Image Container (Shrunk to 75% of its previous 50/50 split width) */
 .project-image-box {
-    flex: 1 !important;
-    width: 50% !important;
-    max-width: 50% !important;
-    border-radius: 12px !important;  /* Smooth outer curves */
-    overflow: hidden !important;     /* Cleanly masks inner image corners */
+    flex: 0 0 37.5% !important; /* Sets width to exactly 37.5% (which is 75% of the half-screen 50% split) */
+    width: 37.5% !important;
+    max-width: 37.5% !important;
+    border-radius: 12px !important;  
+    overflow: hidden !important;     
     display: flex !important;
 }
 
 .project-image-box img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important;    /* Keeps original image canvas intact without stretching */
+    object-fit: cover !important;    
 }
 
-/* 4. Right Side: Text & Button Content (Takes exactly 50%) */
+/* 3. Right Side: Text & Button Content (Expands to fill remaining card space) */
 .project-content-box {
-    flex: 1 !important;
-    width: 50% !important;
+    flex: 1 !important; 
     display: flex !important;
-    flex-direction: column !important; /* Stacks text vertically, allowing button alignment */
+    flex-direction: column !important; 
 }
 
-/* 5. Title & SVG Icon Alignment Tracking */
+/* 4. Project Title: Shrunk to roughly 60% size on desktop layout viewports */
 .project-title {
     display: flex !important;
-    align-items: center !important;  /* Keeps the horizontal arrow inline with the title text */
+    align-items: center !important;  
     gap: 8px !important;
     margin-top: 0px !important;
     margin-bottom: 6px !important;
+    
+    /* Typography Size Shrink */
+    font-size: 18px !important;     /* Shrunk to ~60% from the default 30px theme font-size */
+    font-weight: 700 !important;
+}
+
+/* Scaling down the arrow SVG inside the smaller title slightly for balance */
+.project-title svg {
+    width: 18px !important;
+    height: 18px !important;
 }
 
 .project-year {
     display: inline-block !important;
     margin-bottom: 12px !important;
+    font-size: 14px !important;
 }
 
 .project-description {
     font-family: 'Figtree', sans-serif !important;
-    font-size: 16px !important;
+    font-size: 15px !important;
     line-height: 1.6 !important;
     color: var(--ast-global-color-3) !important;
     margin-top: 8px !important;
     margin-bottom: 24px !important;
 }
 
-/* 6. Sleek, Slimmed, Compact Oval Download Button */
+/* 5. Sleek, Slimmed, Compact Oval Download Button */
 .btn-download-oval {
-    margin-top: auto !important;     /* Pushes button precisely flush with the image's lower margin */
-    align-self: flex-start !important; /* Prevents button from stretching to full width */
+    margin-top: auto !important;     /* Locks button flush with the lower margin of the card */
+    align-self: flex-start !important; /* Keeps button narrow */
     display: inline-block !important;
     
-    /* Branding Color Maps */
+    /* Colors */
     background-color: var(--ast-global-color-0, #046BD2) !important;
     color: #ffffff !important;
     
-    /* Sleek Trimmed Down Oval Dimensioning */
-    padding: 8px 24px !important;    /* Slim vertical height adjustment */
-    border-radius: 20px !important;  /* Reduced radius for a cleaner look */
+    /* Sizing */
+    padding: 8px 22px !important;    
+    border-radius: 20px !important;  
     
-    /* Interactive Sizing Rules */
+    /* Typography */
     font-family: Helvetica, Arial, sans-serif !important;
-    font-size: 14px !important;      /* Sharp, crisp text proportions */
+    font-size: 13px !important;      
     font-weight: 600 !important;
     text-decoration: none !important;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05) !important;
     transition: background-color 0.15s ease-in-out !important;
 }
 
-/* Button Hovers */
 .btn-download-oval:hover,
 .btn-download-oval:focus {
     background-color: var(--ast-global-color-1, #0352a1) !important;
@@ -3083,26 +3098,32 @@ body .elementor hr {
 }
 
 /* ==========================================================================
-   Mobile/Tablet Layout Fluidity Breakpoint
+   Mobile/Tablet Responsive Layout Viewport Override
    ========================================================================== */
 @media (max-width: 921px) {
     .project-container {
-        flex-direction: column !important; /* Auto-stacks content on small screens natively */
+        flex-direction: column !important; /* Reverts cleanly back to one vertical column on phones */
         gap: 20px !important;
+        padding: 20px !important;          /* Slightly tighter padding for mobile screens */
     }
     
     .project-image-box,
     .project-content-box {
         width: 100% !important;
         max-width: 100% !important;
+        flex: none !important;
     }
     
     .project-image-box {
-        height: 260px !important;       /* Clean fixed bounding box for mobile visuals */
+        height: 220px !important;          /* Clean bounding height constraint for mobile */
+    }
+    
+    .project-title {
+        font-size: 20px !important;        /* Gives mobile titles slightly higher prominence on small viewports */
     }
     
     .btn-download-oval {
-        margin-top: 15px !important;    /* Regular padding once side-by-side alignment drops */
+        margin-top: 15px !important;    
     }
 }
 
