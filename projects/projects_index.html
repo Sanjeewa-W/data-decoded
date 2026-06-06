@@ -2984,119 +2984,7 @@ body .elementor hr {
 }
 
 
-
-/* ==========================================================================
-   Responsive Project Grid & Fluid Oval Button System
-   ========================================================================== */
-
-/* Main Multi-Column Display Container Box */
-.project-container {
-  display: flex;
-  flex-direction: row;
-  gap: 36px;                 /* Defines clear side-by-side gap width between layout objects */
-  margin-bottom: 52px;       /* Margin spacing to cleanly isolate subsequent projects down the page */
-  align-items: stretch;      /* Keeps the thumbnail boxes and textual grid columns identically tall */
-}
-
-/* Outer Graphic bounding frame with safe concentric curvature handling */
-.project-image-box {
-  flex: 1;
-  max-width: 45%;            /* Limits responsive footprint on full screen laptop presentations */
-  border-radius: 12px;       /* Sets outer aesthetic curvature path limits */
-  overflow: hidden;          /* CRITICAL: Masks image corner vectors dynamically without pixel leaking */
-  display: flex;
-}
-
-.project-image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;         /* Preserves aspect-ratio composition values seamlessly */
-}
-
-/* Vertical Typography and Abstract content mapping column */
-.project-content-box {
-  flex: 1.3;
-  display: flex;
-  flex-direction: column;    /* Vertically aligns textual groupings on a clean top-to-bottom axis */
-}
-
-/* Aligns title vectors nicely alongside your integrated SVG icons */
-.project-title {
-  display: flex;
-  align-items: center;       /* Vertical midline alignment adjustment for inline headings */
-  gap: 6px;
-  margin-bottom: 6px;
-}
-
-.project-year {
-  display: inline-block;
-  margin-bottom: 14px;
-}
-
-.project-description {
-  font-family: 'Figtree', sans-serif; /* Coordinates font choice precisely with baseline theme guidelines */
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--ast-global-color-3);   /* Adheres cleanly to standard secondary descriptive body colors */
-  margin-top: 8px;
-}
-
-/* Ergonomic Pill-Shaped Oval Call-to-Action Link Element */
-.btn-download-oval {
-  margin-top: auto;          /* Pushes down the element to align exactly with the lowest layout margin of the image */
-  align-self: flex-start;    /* Constraints text stretching to wrap the button bounds snugly around content */
-  
-  /* Typography Configuration matches main interactive layout variables */
-  font-family: Helvetica, Verdana, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none !important;
-  text-align: center;
-  
-  /* Color layout tracking variables bound to global Astra design configurations */
-  background-color: var(--ast-global-color-0, #046BD2);
-  color: #ffffff !important;
-  
-  /* Precision Oval Border Curve Engineering */
-  padding: 12px 28px;
-  border-radius: 100px;      /* Implements a fully flowing fluid capsule outline profile */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
-  transition: background-color 0.2s ease-in-out, transform 0.15s ease;
-}
-
-/* Focus and Action Hovers mapped to match main site colors */
-.btn-download-oval:hover,
-.btn-download-oval:focus {
-  background-color: var(--ast-global-color-1, #0352a1);
-  transform: translateY(-1px);
-}
-
-/* ==========================================================================
-   Mobile & Tablet Breakdown Rulesets (Aligned to core template definitions)
-   ========================================================================== */
-@media (max-width: 921px) {
-  /* Restructures layout properties when viewing inside smaller viewport ranges */
-  .project-container {
-    flex-direction: column;   /* Auto-stacks structural columns vertically on small display variants */
-    align-items: flex-start;
-    gap: 20px;                /* Tighter spacing parameters for efficient screen real-estate usage */
-    margin-bottom: 44px;
-  }
-  
-  .project-image-box {
-    max-width: 100%;          /* Expands visual thumbnails full-width across mobile screen surfaces */
-    width: 100%;
-    height: 240px;            /* Stabilizes rendering height parameters uniform across hand-held units */
-  }
-  
-  .btn-download-oval {
-    margin-top: 22px;         /* Instantiates natural separation margins once vertical row stretch separates */
-  }
-}
-
 </style>
-
-
 <link rel="stylesheet" id="astra-google-fonts-css" href="./Projects_files/css" media="all">
 <link rel="stylesheet" id="elementor-icons-css" href="./Projects_files/elementor-icons.min.css" media="all">
 <link rel="stylesheet" id="elementor-common-css" href="./Projects_files/common.min.css" media="all">
@@ -3337,379 +3225,426 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 			<div class="e-n-tabs-content">
 				<div id="e-n-tab-content-2495788021" role="tabpanel" aria-labelledby="e-n-tab-title-2495788021" data-tab-index="1" style="--n-tabs-title-order: 1;" class="e-active elementor-element elementor-element-b84560b e-con-full e-flex e-con e-child" data-id="b84560b" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-852d6d5 e-grid e-con-full e-con e-child" data-id="852d6d5" data-element_type="container" data-e-type="container">
-		
-		
-		
-		
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
+		<div class="elementor-element elementor-element-2533fe0 e-con-full e-flex e-con e-child" data-id="2533fe0" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-0cd4575 e-con-full e-flex e-con e-child" data-id="0cd4575" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-112e1c4 elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="112e1c4" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Mental Health & Academic Success (School study)					</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-292e63a elementor-widget elementor-widget-text-editor" data-id="292e63a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2023</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f2f1714 elementor-widget elementor-widget-image" data-id="f2f1714" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="750" height="560" src="./Projects_files/Portfolio-Img-1.png" class="attachment-large size-large wp-image-84" alt="portfolio img 1" title="Projects">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-eaf60a6 e-con-full e-flex e-con e-child" data-id="eaf60a6" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-1ff68a0 e-con-full e-flex e-con e-child" data-id="1ff68a0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-64cd23f elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="64cd23f" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Empirical Examination of Workplace Variables and Training Impact</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-aa0377e elementor-widget elementor-widget-text-editor" data-id="aa0377e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2025</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f7b7323 elementor-widget elementor-widget-image" data-id="f7b7323" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="750" height="560" src="./Projects_files/Portfolio-Img-2.png" class="attachment-large size-large wp-image-85" alt="portfolio img 2" title="Projects">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7098a25 e-con-full e-flex e-con e-child" data-id="7098a25" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-7670dde e-con-full e-flex e-con e-child" data-id="7670dde" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a9e27d9 elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="a9e27d9" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Profitability Drivers and Financial Distress Prediction					</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b02e93d elementor-widget elementor-widget-text-editor" data-id="b02e93d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2026</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ea0420e elementor-widget elementor-widget-image" data-id="ea0420e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="750" height="560" src="./Projects_files/Porject-Imgg.png" class="attachment-large size-large wp-image-616" alt="porject imgg" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/02/Porject-Imgg.png 750w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/02/Porject-Imgg-300x224.png 300w" sizes="(max-width: 750px) 100vw, 750px" title="Projects">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-bab301c e-con-full e-flex e-con e-child" data-id="bab301c" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-a97249f e-con-full e-flex e-con e-child" data-id="a97249f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c507e22 elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="c507e22" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Profitability Drivers and Financial Distress Prediction					</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-cfa58d4 elementor-widget elementor-widget-text-editor" data-id="cfa58d4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2026</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-77c63af elementor-widget elementor-widget-image" data-id="77c63af" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="750" height="560" src="./Projects_files/Portfolio-Img-4.png" class="attachment-large size-large wp-image-122" alt="portfolio img 4" title="Projects">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a460482 e-con-full e-flex e-con e-child" data-id="a460482" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-5e356c7 e-con-full e-flex e-con e-child" data-id="5e356c7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-36b82bb elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="36b82bb" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Chart Styles 1					</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e608f49 elementor-widget elementor-widget-text-editor" data-id="e608f49" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2026</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3a63825 elementor-widget elementor-widget-image" data-id="3a63825" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="750" height="560" src="./Projects_files/Project-Pic-6.png" class="attachment-large size-large wp-image-179" alt="project pic 6" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/Project-Pic-6.png 750w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/Project-Pic-6-300x224.png 300w" sizes="(max-width: 750px) 100vw, 750px" title="Projects">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-fa45d85 e-con-full e-flex e-con e-child" data-id="fa45d85" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-593ed29 e-con-full e-flex e-con e-child" data-id="593ed29" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d7af9fc elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="d7af9fc" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
-
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
-
-
-
-
-
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
-
-
-
-
-
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
-
-
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Chart Styles 2				</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a6a0a20 elementor-widget elementor-widget-text-editor" data-id="a6a0a20" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2026</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e74ae37 elementor-widget elementor-widget-image" data-id="e74ae37" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="750" height="560" src="./Projects_files/Project-Pic.png" class="attachment-large size-large wp-image-176" alt="project pic" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/Project-Pic.png 750w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/Project-Pic-300x224.png 300w" sizes="(max-width: 750px) 100vw, 750px" title="Projects">															</div>
+				</div>
+				</div>
 				</div>
 				</div>
 		<div id="e-n-tab-content-2495788022" role="tabpanel" aria-labelledby="e-n-tab-title-2495788022" data-tab-index="2" style="--n-tabs-title-order: 2;" class=" elementor-element elementor-element-9057978 e-con-full e-flex e-con e-child" data-id="9057978" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-a5a95f1 e-grid e-con-full e-con e-child" data-id="a5a95f1" data-element_type="container" data-e-type="container">
-	<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
+		<div class="elementor-element elementor-element-2f7bad3 e-con-full e-flex e-con e-child" data-id="2f7bad3" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-4700479 e-con-full e-flex e-con e-child" data-id="4700479" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f3a3da2 elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="f3a3da2" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Project Name Here						</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a47ef6e elementor-widget elementor-widget-text-editor" data-id="a47ef6e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2023</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-54580ac elementor-widget elementor-widget-image" data-id="54580ac" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="750" height="560" src="./Projects_files/Porject-Imgg.png" class="attachment-large size-large wp-image-616" alt="porject imgg" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/02/Porject-Imgg.png 750w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/02/Porject-Imgg-300x224.png 300w" sizes="(max-width: 750px) 100vw, 750px" title="Projects">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-258931a e-con-full e-flex e-con e-child" data-id="258931a" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-d5f3534 e-con-full e-flex e-con e-child" data-id="d5f3534" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7df9534 elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="7df9534" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Project Name Here						</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d90f3ee elementor-widget elementor-widget-text-editor" data-id="d90f3ee" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2023</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-98b93e7 elementor-widget elementor-widget-image" data-id="98b93e7" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="750" height="560" src="./Projects_files/Portfolio-Img-4.png" class="attachment-large size-large wp-image-122" alt="portfolio img 4" title="Projects">															</div>
+				</div>
+				</div>
 				</div>
 				</div>
 		<div id="e-n-tab-content-2495788023" role="tabpanel" aria-labelledby="e-n-tab-title-2495788023" data-tab-index="3" style="--n-tabs-title-order: 3;" class=" elementor-element elementor-element-be55067 e-con-full e-flex e-con e-child" data-id="be55067" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-7b4e09e e-grid e-con-full e-con e-child" data-id="7b4e09e" data-element_type="container" data-e-type="container">
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
+		<div class="elementor-element elementor-element-cef322a e-con-full e-flex e-con e-child" data-id="cef322a" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-457e01e e-con-full e-flex e-con e-child" data-id="457e01e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5802c5b elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="5802c5b" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Project Name Here						</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-7d86db4 elementor-widget elementor-widget-text-editor" data-id="7d86db4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2023</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b20b76a elementor-widget elementor-widget-image" data-id="b20b76a" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="750" height="560" src="./Projects_files/Portfolio-Img-1.png" class="attachment-large size-large wp-image-84" alt="portfolio img 1" title="Projects">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b5d70ef e-con-full e-flex e-con e-child" data-id="b5d70ef" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-cadd0f9 e-con-full e-flex e-con e-child" data-id="cadd0f9" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1f89131 elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="1f89131" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
-
-
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
-
-
-
-
-
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Project Name Here						</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-177306d elementor-widget elementor-widget-text-editor" data-id="177306d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2023</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e9511c9 elementor-widget elementor-widget-image" data-id="e9511c9" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="750" height="560" src="./Projects_files/Portfolio-Img-2.png" class="attachment-large size-large wp-image-85" alt="portfolio img 2" title="Projects">															</div>
+				</div>
+				</div>
 				</div>
 				</div>
 		<div id="e-n-tab-content-2495788024" role="tabpanel" aria-labelledby="e-n-tab-title-2495788024" data-tab-index="4" style="--n-tabs-title-order: 4;" class=" elementor-element elementor-element-8cc978f e-con-full e-flex e-con e-child" data-id="8cc978f" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-f10d7f9 e-grid e-con-full e-con e-child" data-id="f10d7f9" data-element_type="container" data-e-type="container">
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
+		<div class="elementor-element elementor-element-12f973d e-con-full e-flex e-con e-child" data-id="12f973d" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-8096828 e-con-full e-flex e-con e-child" data-id="8096828" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a4f5d8e elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="a4f5d8e" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Project Name Here						</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-355b4a2 elementor-widget elementor-widget-text-editor" data-id="355b4a2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2023</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e3ce3ae elementor-widget elementor-widget-image" data-id="e3ce3ae" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="750" height="560" src="./Projects_files/Project-Pic-6.png" class="attachment-large size-large wp-image-179" alt="project pic 6" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/Project-Pic-6.png 750w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/Project-Pic-6-300x224.png 300w" sizes="(max-width: 750px) 100vw, 750px" title="Projects">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6da6937 e-con-full e-flex e-con e-child" data-id="6da6937" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-095c8f0 e-con-full e-flex e-con e-child" data-id="095c8f0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-82cb22e elementor-position-inline-start elementor-mobile-position-inline-start elementor-view-default elementor-widget elementor-widget-icon-box" data-id="82cb22e" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 128 216 176 168 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="72 32 72 176 216 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
-
-<div class="project-container">
-  
-  <div class="project-image-box">
-    <img src="./Projects_files/Portfolio-Img-1.png" alt="Data Analysis Project Overview Graphic">
-  </div>
-  
-  <div class="project-content-box">
-    <div class="text-details">
-      
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
-      
-      <p class="project-description">
-        An empirical investigation exploring how specific workplace metrics and training modules interact with overall student performance and psychological well-being.
-      </p>
-    </div>
-    
-    <a href="#" class="btn-download-oval">Download Report</a>
-    
-  </div>
-</div>
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Project Name Here						</span>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-60620d5 elementor-widget elementor-widget-text-editor" data-id="60620d5" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2023</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-84256a4 elementor-widget elementor-widget-image" data-id="84256a4" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="750" height="560" src="./Projects_files/Project-Pic.png" class="attachment-large size-large wp-image-176" alt="project pic" srcset="https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/Project-Pic.png 750w, https://sanjeewa-w.github.io/data-decoded/wp-content/uploads/2025/01/Project-Pic-300x224.png 300w" sizes="(max-width: 750px) 100vw, 750px" title="Projects">															</div>
+				</div>
+				</div>
 				</div>
 				</div>
 					</div>
@@ -3813,8 +3748,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 				<div role="region" aria-labelledby="e-n-accordion-item-2303" class="elementor-element elementor-element-e996b06 e-con-full e-flex e-con e-child" data-id="e996b06" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-b213614 elementor-widget elementor-widget-text-editor" data-id="b213614" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>I offer a range of services including web design, front-end development, UX/UI design, responsive design, e-commerce solutions, and brand identity creation. Visit my Services page for a detailed overview.</p>								
-								</div>
+									<p>I offer a range of services including web design, front-end development, UX/UI design, responsive design, e-commerce solutions, and brand identity creation. Visit my Services page for a detailed overview.</p>								</div>
 				</div>
 				</div>
 					</details>
@@ -3830,8 +3764,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 				<div role="region" aria-labelledby="e-n-accordion-item-2304" class="elementor-element elementor-element-72219c5 e-con-full e-flex e-con e-child" data-id="72219c5" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-5502232 elementor-widget elementor-widget-text-editor" data-id="5502232" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>I offer a range of services including web design, front-end development, UX/UI design, responsive design, e-commerce solutions, and brand identity creation. Visit my Services page for a detailed overview.</p>								
-								</div>
+									<p>I offer a range of services including web design, front-end development, UX/UI design, responsive design, e-commerce solutions, and brand identity creation. Visit my Services page for a detailed overview.</p>								</div>
 				</div>
 				</div>
 					</details>
