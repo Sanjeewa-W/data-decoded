@@ -2986,51 +2986,53 @@ body .elementor hr {
 
 
 /* ==========================================================================
-   Responsive Project Grid & Fluid Oval Button System
+   Side-by-Side 50/50 Project Layout System (with Slim Button Adjustments)
    ========================================================================== */
 
-/* ==========================================================================
-   Single Column Portfolio & Slim Button System Overrides
-   ========================================================================== */
-
-/* 1. Neutralize Elementor Parent Grid Column Layout Traps */
+/* 1. Neutralize Elementor's default grid layouts */
 .elementor-widget-container .e-grid {
-    display: block !important; /* Strips out side-by-side grid splitting entirely */
+    display: block !important;
     width: 100% !important;
 }
 
-/* 2. Main Structural Container - Pure Single Column Stack */
+/* 2. Setup Main Side-by-Side Flex Split */
 .project-container {
-    display: block !important;   /* Forces structural elements to stack downward */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important; /* Forces text container and image to be the same height */
+    gap: 40px !important;            /* Space between the image and the content column */
     width: 100% !important;
-    margin-bottom: 60px !important; /* Balanced spacing between individual project rows */
+    margin-bottom: 65px !important;  /* Elegant spacing between separate project blocks */
 }
 
-/* 3. Maintain Original Canvas Box Handling & Proportions */
+/* 3. Left Side: Image Canvas Custom Sizing (Takes exactly 50%) */
 .project-image-box {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-bottom: 20px !important; /* Clean visual space right below the image box */
-    border-radius: 12px !important;  /* Corner curvature handling */
-    overflow: hidden !important;     /* Smoothly clips image bounds along the border radius */
+    flex: 1 !important;
+    width: 50% !important;
+    max-width: 50% !important;
+    border-radius: 12px !important;  /* Smooth outer curves */
+    overflow: hidden !important;     /* Cleanly masks inner image corners */
+    display: flex !important;
 }
 
 .project-image-box img {
     width: 100% !important;
-    height: auto !important;         /* Preserves native aspect ratio constraints */
-    object-fit: contain !important;  /* Maintains full raw background image metrics without scaling */
-    display: block !important;
+    height: 100% !important;
+    object-fit: cover !important;    /* Keeps original image canvas intact without stretching */
 }
 
-/* 4. Text Details Layout Spacing Group */
+/* 4. Right Side: Text & Button Content (Takes exactly 50%) */
 .project-content-box {
-    width: 100% !important;
-    display: block !important;
+    flex: 1 !important;
+    width: 50% !important;
+    display: flex !important;
+    flex-direction: column !important; /* Stacks text vertically, allowing button alignment */
 }
 
+/* 5. Title & SVG Icon Alignment Tracking */
 .project-title {
     display: flex !important;
-    align-items: center !important;  /* Straight line tracking for title text and inline arrow SVG */
+    align-items: center !important;  /* Keeps the horizontal arrow inline with the title text */
     gap: 8px !important;
     margin-top: 0px !important;
     margin-bottom: 6px !important;
@@ -3047,31 +3049,33 @@ body .elementor hr {
     line-height: 1.6 !important;
     color: var(--ast-global-color-3) !important;
     margin-top: 8px !important;
-    margin-bottom: 20px !important; /* Space separating abstract text from button */
+    margin-bottom: 24px !important;
 }
 
-/* 5. Sleek, Slimmed, Compact Oval Download Button */
+/* 6. Sleek, Slimmed, Compact Oval Download Button */
 .btn-download-oval {
-    display: inline-block !important; /* Snug wrapping framework that hugs text tightly */
+    margin-top: auto !important;     /* Pushes button precisely flush with the image's lower margin */
+    align-self: flex-start !important; /* Prevents button from stretching to full width */
+    display: inline-block !important;
     
-    /* Global Color System Integrations */
+    /* Branding Color Maps */
     background-color: var(--ast-global-color-0, #046BD2) !important;
     color: #ffffff !important;
     
-    /* Slim Padding & Small Oval Curvature */
-    padding: 8px 24px !important;    /* Trimmed down vertical height padding to look sleek */
-    border-radius: 20px !important;  /* Smaller, clean semi-oval presentation contour */
+    /* Sleek Trimmed Down Oval Dimensioning */
+    padding: 8px 24px !important;    /* Slim vertical height adjustment */
+    border-radius: 20px !important;  /* Reduced radius for a cleaner look */
     
-    /* Typography Rules */
+    /* Interactive Sizing Rules */
     font-family: Helvetica, Arial, sans-serif !important;
-    font-size: 14px !important;      /* Balanced reading hierarchy sizing */
+    font-size: 14px !important;      /* Sharp, crisp text proportions */
     font-weight: 600 !important;
     text-decoration: none !important;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05) !important;
     transition: background-color 0.15s ease-in-out !important;
 }
 
-/* Button Interactions */
+/* Button Hovers */
 .btn-download-oval:hover,
 .btn-download-oval:focus {
     background-color: var(--ast-global-color-1, #0352a1) !important;
@@ -3079,26 +3083,27 @@ body .elementor hr {
 }
 
 /* ==========================================================================
-   Mobile & Tablet Breakdown Rulesets (Aligned to core template definitions)
+   Mobile/Tablet Layout Fluidity Breakpoint
    ========================================================================== */
 @media (max-width: 921px) {
-  /* Restructures layout properties when viewing inside smaller viewport ranges */
-  .project-container {
-    flex-direction: column;   /* Auto-stacks structural columns vertically on small display variants */
-    align-items: flex-start;
-    gap: 20px;                /* Tighter spacing parameters for efficient screen real-estate usage */
-    margin-bottom: 44px;
-  }
-  
-  .project-image-box {
-    max-width: 100%;          /* Expands visual thumbnails full-width across mobile screen surfaces */
-    width: 100%;
-    height: 240px;            /* Stabilizes rendering height parameters uniform across hand-held units */
-  }
-  
-  .btn-download-oval {
-    margin-top: 22px;         /* Instantiates natural separation margins once vertical row stretch separates */
-  }
+    .project-container {
+        flex-direction: column !important; /* Auto-stacks content on small screens natively */
+        gap: 20px !important;
+    }
+    
+    .project-image-box,
+    .project-content-box {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .project-image-box {
+        height: 260px !important;       /* Clean fixed bounding box for mobile visuals */
+    }
+    
+    .btn-download-oval {
+        margin-top: 15px !important;    /* Regular padding once side-by-side alignment drops */
+    }
 }
 
 </style>
