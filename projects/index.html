@@ -2995,6 +2995,50 @@ body .elementor hr {
     width: 100% !important;
 }
 
+
+.project-description {
+    font-family: 'Figtree', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: var(--ast-global-color-3) !important;
+    margin-top: 8px !important;
+    margin-bottom: 24px !important;
+}
+
+/* Ensure all content inside project descriptions uses identical typography */
+.project-description p,
+.project-description ul,
+.project-description ol,
+.project-description li {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+}
+
+/* Tight spacing between headings and lists */
+.project-description p {
+    margin-top: 0 !important;
+    margin-bottom: 4px !important;
+}
+
+.project-description ul,
+.project-description ol {
+    margin-top: 2px !important;
+    margin-bottom: 12px !important;
+    padding-left: 20px !important;
+}
+
+/* Consistent spacing between list items */
+.project-description li {
+    margin-bottom: 2px !important;
+}
+
+.project-description li:last-child {
+    margin-bottom: 0 !important;
+}
+
+
 /* 1. Main Project Card: Grey background, round cornered container box (Services Page Style) */
 .project-container {
     display: flex !important;
@@ -3405,27 +3449,31 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
   <span class="project-year">2023</span>
 </div>
       
-      <p class="project-description">
-				
-			This project demonstrates structured statistical analysis with visualization. A real dataset from Kaggle was analyzed in SPSS.<br>
-			
+	<div class="project-description">
 
-		<p style="margin-bottom:2px;"><strong>Data preparation included:</strong></p>
-		<ul style="margin-top:2px;">
+		<p>
+			This project demonstrates structured statistical analysis with visualization.
+			A real dataset from Kaggle was analyzed in SPSS.
+		</p>
+
+		<p><strong>Data preparation included:</strong></p>
+
+		<ul>
 			<li>Coding missing values</li>
 			<li>Standardizing responses</li>
 			<li>Screening and cleaning variables</li>
 		</ul>
 
-		<p style="margin-bottom:2px;"><strong>Analysis included:</strong></p>
-		<ul style="margin-top:2px;">
+		<p><strong>Analysis included:</strong></p>
+
+		<ul>
 			<li>Descriptive statistics and frequency tables</li>
 			<li>Cross-tabulations and graphical summaries</li>
 			<li>Chi-square test for categorical associations</li>
 			<li>Fisher's Exact Test when expected counts were small</li>
 		</ul>
 
-			</p>
+	</div>
     </div>
     
     <a href="#" class="btn-download-oval">Download Report</a>
