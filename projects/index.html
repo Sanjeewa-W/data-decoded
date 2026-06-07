@@ -3058,6 +3058,17 @@ body .elementor hr {
     margin-bottom: 12px !important;
     font-size: 14px !important;
 }
+/* 4. Project Header - Bring title and year to one line */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligns them vertically in the center */
+  width: 100%;        /* Ensures the container takes full width */
+}
+
+.project-title {
+  margin: 0;          /* Removes default browser margins from the h3 */
+}
 
 .project-description {
     font-family: 'Figtree', sans-serif !important;
@@ -3383,13 +3394,16 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
   <div class="project-content-box">
     <div class="text-details">
       
-      <h3 class="project-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
-          <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
-        </svg>Mental Health & Academic Success (School study)
-      </h3>
-      
-      <span class="project-year">2023</span>
+      <div class="project-header">
+  <h3 class="project-title">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: currentcolor; vertical-align: middle; margin-right: 8px;">
+      <path d="M12 2l-1.4 1.4L17.2 10H2v2h15.2l-6.6 6.6L12 22l10-10z"/>
+    </svg>
+    Mental Health & Academic Success (School study)
+  </h3>
+  
+  <span class="project-year">2023</span>
+</div>
       
       <p class="project-description">
 				
