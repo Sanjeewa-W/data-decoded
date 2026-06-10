@@ -3349,6 +3349,110 @@ body .elementor hr {
 		background: none !important;
 		padding: 0 !important;
 	}
+
+
+
+
+
+
+	/* ==========================================================================
+   METHODOLOGY PROGRESS TRACK STYLES
+   ========================================================================== */
+
+/* Progress Track Row Layout */
+.methodology-track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px 0 60px 0;
+    padding: 24px;
+    background-color: #111111;       /* Coordinates perfectly with your existing dark cards */
+    border: 1px solid #1c1c1e;       /* Matches your current border profile */
+    border-radius: 12px;            /* Mirrors the smooth corners of your UI layout */
+    box-sizing: border-box;
+}
+
+/* Individual Step Formatting */
+.track-step {
+    font-family: 'SF Mono', 'JetBrains Mono', Courier, monospace;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8e8e93;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;            
+}
+
+/* Labels Inside Steps */
+.track-step .step-lbl {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #636366;
+}
+
+/* Active/Highlight State (Step 01) */
+.track-step.active {
+    color: #ffffff;
+}
+
+.track-step.active .step-lbl {
+    color: #e0aa3e;                  /* Integrates your exact brand accent gold gold color */
+}
+
+/* Modern Linear Arrows */
+.track-arrow {
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'SF Mono', 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: #2c2c2e;                 /* Subtle dark tone for the arrow paths */
+    letter-spacing: -2px;           
+    margin: 0 15px;
+    user-select: none;              
+}
+
+/* Responsive Adaptation for Tablet & Mobile Screens */
+@media (max-width: 900px) {
+    .methodology-track {
+        flex-direction: column;     /* Stacks steps vertically for a clean mobile timeline */
+        align-items: flex-start;    /* Aligns everything neatly to the left */
+        gap: 12px;
+        padding: 30px;
+        margin: 30px 0 50px 0;
+    }
+
+    .track-step {
+        font-size: 15px;            /* Slightly larger numbers for mobile readability */
+    }
+
+    .track-step .step-lbl {
+        font-size: 12px;
+    }
+
+    /* Converts horizontal arrows into elegant vertical down-pointing arrows */
+    .track-arrow {
+        flex-grow: 0;
+        text-align: left;
+        margin: 4px 0 4px 6px;      /* Positions the arrow perfectly between stacked steps */
+        color: #3a3a3c;             /* Keeps the subtle dark tone */
+        letter-spacing: 0;          /* Resets the horizontal letter-spacing */
+    }
+
+    .track-arrow::after {
+        content: "│\A▼";            /* Draws a clean, vertical institutional timeline arrow */
+        white-space: pre;           /* Forces the arrow head to drop below the line */
+        font-size: 11px;
+        line-height: 1.1;
+        display: block;
+    }
+}
+
+
+
 /*# sourceURL=wp-emoji-styles-inline-css */
 </style>
 <style id="global-styles-inline-css">
@@ -3569,31 +3673,26 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
 
 			
 						<div class="elementor-icon-box-content">
+							
 
-									<h3 class="elementor-icon-box-title">
+									<p class="section-lead">A rigorous, end-to-end framework translating complex academic and professional data into defensible insights.</p>
+</header>
 
-
-<div style="display: flex; align-items: center; justify-content: space-between; width: 100%; font-family: monospace; font-size: 14px; color: #ffffff; background-color: #0c0c0e; padding: 20px 0;">
-    <div style="white-space: nowrap;">[01. SCOPE]</div>
-    <div style="color: #545456; flex-grow: 1; text-align: center; letter-spacing: -2px;">───&gt;</div>
+<div class="methodology-track">
+    <div class="track-step active">01 <span class="step-lbl">SCOPE</span></div>
+    <div class="track-arrow">───&gt;</div>
     
-    <div style="white-space: nowrap;">[02. ARCHITECTURE]</div>
-    <div style="color: #545456; flex-grow: 1; text-align: center; letter-spacing: -2px;">───&gt;</div>
+    <div class="track-step">02 <span class="step-lbl">ARCHITECTURE</span></div>
+    <div class="track-arrow">───&gt;</div>
     
-    <div style="white-space: nowrap;">[03. INTELLIGENCE]</div>
-    <div style="color: #545456; flex-grow: 1; text-align: center; letter-spacing: -2px;">───&gt;</div>
+    <div class="track-step">03 <span class="step-lbl">INTELLIGENCE</span></div>
+    <div class="track-arrow">───&gt;</div>
     
-    <div style="white-space: nowrap;">[04. SYNTHESIS]</div>
-    <div style="color: #545456; flex-grow: 1; text-align: center; letter-spacing: -2px;">───&gt;</div>
+    <div class="track-step">04 <span class="step-lbl">SYNTHESIS</span></div>
+    <div class="track-arrow">───&gt;</div>
     
-    <div style="white-space: nowrap;">[05. TRANSLATION]</div>
+    <div class="track-step">05 <span class="step-lbl">TRANSLATION</span></div>
 </div>
-
-					</h3>
-				
-									<p class="elementor-icon-box-description">
-						Web design is more than just aesthetics; it's about marrying form with function to create a seamless user experience that captivates and converts. My web design services focus on building responsive, engaging, and visually appealing websites that reflect your brand's essence.					</p>
-				
 			</div>
 			
 		</div>
