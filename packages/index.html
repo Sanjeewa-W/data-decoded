@@ -3332,16 +3332,17 @@ body .elementor hr {
    CUSTOM COMPONENT: PORTFOLIO PACKAGES PRICING NOTE
    ========================================================================== */
 
+/* 1. Mobile Setup (Default state: screens under 768px wide) */
 .custom-pricing-note-box {
     background-color: #1a1a1a;
     color: #cecece;
     border-radius: 6px; 
-    padding: 24px 30px; 
+    padding: 20px 20px;          /* Adjusted slightly tighter for narrow screens */
     margin-bottom: 2em; 
-	margin-left: 40px;
-    margin-right: 30px;
+    margin-left: 0 !important;   /* Force margins to zero on mobile viewports */
+    margin-right: 0 !important;  /* Force margins to zero on mobile viewports */
     
-    /* h4 Typographic Alignment Styles */
+    /* Typographic Alignment Styles */
     font-family: Helvetica, Verdana, Arial, sans-serif;
     font-size: 24px;
     font-size: 1.1rem;
@@ -3362,6 +3363,24 @@ body .elementor hr {
 /* Ensures strong/bold tags look sharp and distinctly heavy inside the box */
 .custom-pricing-note-box strong {
     font-weight: 700;
+}
+
+/* 2. Tablet Setup (Screens 768px to 1024px wide) */
+@media (min-width: 768px) {
+    .custom-pricing-note-box {
+        padding: 24px 24px;
+        margin-left: 20px;       /* Moderated transition margins for medium screens */
+        margin-right: 15px;
+    }
+}
+
+/* 3. Desktop Setup (Screens 1025px wide and larger) */
+@media (min-width: 1025px) {
+    .custom-pricing-note-box {
+        padding: 24px 30px;      /* Full desktop custom internal padding */
+        margin-left: 40px;       /* Restores your specific desktop margins */
+        margin-right: 30px;
+    }
 }
 
 
