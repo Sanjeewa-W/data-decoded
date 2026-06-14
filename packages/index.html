@@ -3332,15 +3332,17 @@ body .elementor hr {
    CUSTOM COMPONENT: PORTFOLIO PACKAGES PRICING NOTE
    ========================================================================== */
 
-/* 1. Mobile Setup (Default state: screens under 768px wide) */
+/* 1. Mobile Setup (Default behavior applied below 768px viewports) */
 .custom-pricing-note-box {
     background-color: #1a1a1a;
     color: #cecece;
     border-radius: 6px; 
-    padding: 20px 20px;          /* Adjusted slightly tighter for narrow screens */
+    padding: 20px 20px;          /* Compact interior spacing for mobile screens */
+    margin-top: 15px;
     margin-bottom: 2em; 
-    margin-left: 0 !important;   /* Force margins to zero on mobile viewports */
-    margin-right: 0 !important;  /* Force margins to zero on mobile viewports */
+    margin-left: 0 !important;   /* Aligns horizontal box edge directly with grids */
+    margin-right: 0 !important;  /* Aligns horizontal box edge directly with grids */
+    box-sizing: border-box;
     
     /* Typographic Alignment Styles */
     font-family: Helvetica, Verdana, Arial, sans-serif;
@@ -3350,40 +3352,31 @@ body .elementor hr {
     letter-spacing: 0px;
 }
 
-/* Styles for the inside box title */
-.custom-pricing-note-box .custom-box-title {
-    font-weight: 350;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 12px;
-    font-size: 1.1em;
-    color: #cecece;
-}
-
 /* Ensures strong/bold tags look sharp and distinctly heavy inside the box */
 .custom-pricing-note-box strong {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* 2. Tablet Setup (Screens 768px to 1024px wide) */
 @media (min-width: 768px) {
     .custom-pricing-note-box {
-        padding: 24px 24px;
-        margin-left: 2px;       /* Moderated transition margins for medium screens */
-        margin-right: 2px;
+        padding: 24px 24px;      /* Scales interior spacing density to match tablet columns */
+        margin-top: 20px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
 
 /* 3. Desktop Setup (Screens 1025px wide and larger) */
 @media (min-width: 1025px) {
     .custom-pricing-note-box {
-        padding: 24px 30px;      /* Full desktop custom internal padding */
-        margin-left: 40px;       /* Restores your specific desktop margins */
-        margin-right: 30px;
+        padding: 24px 30px;      /* Full desktop layout internal cushioning */
+        margin-top: 25px;
+        margin-bottom: 2.5em;    /* Extended whitespace break before grid sections execute */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
-
-
 
 </style>
 <link rel="stylesheet" id="astra-google-fonts-css" href="./Package_files/css" media="all">
