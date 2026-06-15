@@ -4273,7 +4273,7 @@ async function getCountryCode() {
             await response.text();
 
         const match =
-            text.match(/loc=(.*)/);
+    	text.match(/^loc=(.+)$/m);
 
         return match
             ? match[1].trim()
@@ -4351,7 +4351,10 @@ async function localizePrices() {
             const rates =
                 await getExchangeRates();
 
-            if (!rates[currency]) return;
+           if (!rates[currency]) {
+    		rate = 1;
+    		currency = "USD";
+			}
 
             rate = rates[currency];
 
@@ -4359,7 +4362,7 @@ async function localizePrices() {
 
         const formatter =
             new Intl.NumberFormat(
-                undefined,
+    		"en",
                 {
                     style: "currency",
                     currency: currency,
