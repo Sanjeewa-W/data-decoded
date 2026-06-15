@@ -4292,20 +4292,25 @@ async function getCountryCode() {
 
 async function getExchangeRates() {
 
-    return {
-        GBP: 0.74,
-        EUR: 0.86,
-        AUD: 1.54,
-        CAD: 1.37,
-        INR: 86,
-        PKR: 282,
-        BDT: 122,
-        NPR: 138,
-        LKR: 330,
-        MVR: 15.4,
-        AFN: 71,
-        BTN: 86
-    };
+    try {
+
+        const response =
+            await fetch(
+                "https://open.er-api.com/v6/latest/USD"
+            );
+
+        const data =
+            await response.json();
+
+        return data.rates;
+
+    } catch (e) {
+
+        console.error(e);
+
+        return {};
+
+    }
 
 }
 
