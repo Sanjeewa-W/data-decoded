@@ -4339,6 +4339,7 @@ async function getExchangeRates() {
 
 function roundPrice(value, currency) {
 
+    // Major currencies
     if (
         currency === "USD" ||
         currency === "GBP" ||
@@ -4346,13 +4347,21 @@ function roundPrice(value, currency) {
         currency === "AUD" ||
         currency === "CAD"
     ) {
-
         return Math.round(value);
-
     }
 
-    return Math.round(value / 100) * 100;
+    // Small amounts: round to nearest 10
+    if (value < 1000) {
+        return Math.round(value / 10) * 10;
+    }
 
+    // Medium amounts: round to nearest 50
+    if (value < 10000) {
+        return Math.round(value / 50) * 50;
+    }
+
+    // Large amounts: round to nearest 100
+    return Math.round(value / 100) * 100;
 }
 
 
