@@ -3791,7 +3791,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
   <h3 class="section-title">1. Fast Data Analysis for Small-Scale Research</h3>
   <div class="packages-container">
     <table class="packages-table">
-      <tr><th>PACKAGE</th><th>- STARTER -<br>Essential data cleaning</th><th>- STANDARD -<br>Cleaning +<br> Descriptive stats</th><th>- ADVANCED -<br>Cleaning + Stats<br> + Basic tests</th></tr>
+      <tr><th>PACKAGE</th><th><b>- STARTER -</b><br>Essential data cleaning</th><th><b>- STANDARD -</b><br>Cleaning +<br> Descriptive stats</th><th><b>- ADVANCED -</b><br>Cleaning + Stats<br> + Basic tests</th></tr>
       <tr><td>Description</td><td>Clean and organize your Excel data for accurate analysis and reporting.</td><td>Data cleaning plus summary statistics and clear visual charts in Excel or SPSS.</td><td>Complete cleaning, descriptive stats and basic statistical tests with output.</td></tr>
       <tr><td>Visualize results</td><td>-</td><td>✓</td><td>✓</td></tr>
       <tr><td>Survey questions</td><td>20</td><td>20</td><td>20</td></tr>
@@ -3816,7 +3816,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
   <h3 class="section-title">2. Unified Research Data Analysis</h3>
   <div class="packages-container">
     <table class="packages-table">
-      <tr><th>PACKAGE</th><th>- STARTER -<br>Descriptive & Basic Testing</th><th>- STANDARD -<br>Regression & Insights Level</th><th>- ADVANCED -<br>Advanced Multivariate Level</th></tr>
+      <tr><th>PACKAGE</th><th><b>- STARTER -</b><br>Descriptive & Basic Testing</th><th><b>- STANDARD -</b><br>Regression & Insights Level</th><th><b>- ADVANCED -</b><br>Advanced Multivariate Level</th></tr>
       <tr><td>Description</td><td>Data cleaning, Descriptives<br> Crosstabs, Correlations, T-tests<br>One-way ANOVA </td><td>Simple free text review <br> Nonparametric tests <br>Linear/logistic regression<br> Insights summary</td><td>ANCOVA, Repeated ANOVA<br> MANOVA, Advanced regression<br> Complex free text<br> Research-Standard Reporting</td></tr>
       <tr><td>Visualize results</td><td>✓</td><td>✓</td><td>✓</td></tr>
       <tr><td>Insights summary</td><td>-</td><td>✓</td><td>✓</td></tr>
@@ -3844,7 +3844,7 @@ typeof flexibility !== "undefined" && flexibility(document.documentElement);
   <h3 class="section-title">3. Regression Analysis</h3>
   <div class="packages-container">
     <table class="packages-table">
-      <tr><th>PACKAGE</th><th>- STARTER -<br>Simple Regression Analysis</th><th>- STANDARD -<br>Multiple Regression  Analysis</th><th>- ADVANCED -<br>Advanced Regression Modeling</th></tr>
+      <tr><th>PACKAGE</th><th><b>- STARTER -</b><br>Simple Regression Analysis</th><th><b>- STANDARD -</b><br>Multiple Regression  Analysis</th><th><b>- ADVANCED -</b><br>Advanced Regression Modeling</th></tr>
       <tr><td>Descrioption</td><td>One regression model, <br>diagnostics, correlation<br> SPSS/R output+<br> brief insights upto 150-200 words.</td><td>Three regression models<br> stats, descriptives, correlation<br> diagnostics, SPSS/R + <br> interpretation 500 -700 words.</td><td>Five regression models<br> stats, desriptives, correlation<br> diagnostics, full interpretation<br> 1500-2000 words.</td></tr>
       <tr><td>Visualize results</td><td>✓</td><td>✓</td><td>✓</td></tr>
 	  <tr><td>Insights summary</td><td>✓</td><td>✓</td><td>✓</td></tr>      
@@ -4228,26 +4228,35 @@ const currencyMap = {
     // North America
     US: "USD",
     CA: "CAD",
+    MX: "MXN",
 
-    // UK
+    // Europe
     GB: "GBP",
-
-    // Eurozone
-    DE: "EUR",
+    IE: "EUR",
     FR: "EUR",
+    DE: "EUR",
     ES: "EUR",
     IT: "EUR",
     NL: "EUR",
     BE: "EUR",
-    IE: "EUR",
     PT: "EUR",
     AT: "EUR",
     FI: "EUR",
     GR: "EUR",
+    LU: "EUR",
 
-    // Oceania
-    AU: "AUD",
-    NZ: "NZD",
+    CH: "CHF",
+    NO: "NOK",
+    SE: "SEK",
+    DK: "DKK",
+    PL: "PLN",
+    CZ: "CZK",
+    HU: "HUF",
+    RO: "RON",
+    BG: "BGN",
+    RS: "RSD",
+    UA: "UAH",
+    IS: "ISK",
 
     // South Asia
     AF: "AFN",
@@ -4257,7 +4266,73 @@ const currencyMap = {
     MV: "MVR",
     NP: "NPR",
     PK: "PKR",
-    LK: "LKR"
+    LK: "LKR",
+
+    // East Asia
+    CN: "CNY",
+    HK: "HKD",
+    JP: "JPY",
+    KR: "KRW",
+    TW: "TWD",
+    MO: "MOP",
+
+    // Southeast Asia
+    SG: "SGD",
+    MY: "MYR",
+    TH: "THB",
+    ID: "IDR",
+    PH: "PHP",
+    VN: "VND",
+    KH: "KHR",
+    LA: "LAK",
+    MM: "MMK",
+    BN: "BND",
+
+    // Middle East
+    AE: "AED",
+    SA: "SAR",
+    QA: "QAR",
+    KW: "KWD",
+    BH: "BHD",
+    OM: "OMR",
+    JO: "JOD",
+    IL: "ILS",
+    IQ: "IQD",
+
+    // Oceania
+    AU: "AUD",
+    NZ: "NZD",
+    FJ: "FJD",
+    PG: "PGK",
+
+    // Africa
+    ZA: "ZAR",
+    NG: "NGN",
+    KE: "KES",
+    UG: "UGX",
+    TZ: "TZS",
+    ET: "ETB",
+    GH: "GHS",
+    MA: "MAD",
+    DZ: "DZD",
+    EG: "EGP",
+
+    // South America
+    BR: "BRL",
+    AR: "ARS",
+    CL: "CLP",
+    CO: "COP",
+    PE: "PEN",
+    UY: "UYU",
+    PY: "PYG",
+    BO: "BOB",
+    VE: "VES",
+
+    // Caribbean
+    JM: "JMD",
+    TT: "TTD",
+    BB: "BBD",
+    BS: "BSD"
 };
 
 
